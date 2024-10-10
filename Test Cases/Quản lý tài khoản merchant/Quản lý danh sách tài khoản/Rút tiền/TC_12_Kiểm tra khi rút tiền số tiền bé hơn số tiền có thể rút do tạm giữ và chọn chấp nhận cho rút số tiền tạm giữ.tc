@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_12_Kiểm tra khi rút tiền số tiền bé hơn số tiền có thể rút do tạm giữ và chọn chấp nhận cho rút số tiền tạm giữ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a7ef8381-7319-49f7-92cf-384ef407930a</testCaseGuid>
+</TestCaseEntity>

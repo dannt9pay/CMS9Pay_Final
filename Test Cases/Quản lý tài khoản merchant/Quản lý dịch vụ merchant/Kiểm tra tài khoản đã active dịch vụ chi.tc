@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra tài khoản đã active dịch vụ chi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9bb1078f-9a3d-4eeb-bea0-b878fda8bf0d</testCaseGuid>
+</TestCaseEntity>

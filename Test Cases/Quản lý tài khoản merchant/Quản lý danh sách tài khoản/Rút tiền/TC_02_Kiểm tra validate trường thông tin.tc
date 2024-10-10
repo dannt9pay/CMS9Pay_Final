@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_02_Kiểm tra validate trường thông tin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b865d14c-bdf6-4a6a-a96f-e74597f2bf74</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_08_Kiểm tra user chưa đăng ký dịch vụ và chọn kì đối soát chưa tồn tại</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c27ae5c-7f53-41c6-88d8-13262928acf1</testCaseGuid>
+</TestCaseEntity>

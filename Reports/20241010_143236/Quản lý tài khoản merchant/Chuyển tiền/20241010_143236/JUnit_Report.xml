@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Chuyển tiền" time="433.229" tests="5" failures="2" errors="0">
+   <testsuite name="Chuyển tiền" tests="5" failures="2" errors="0" time="433.229" skipped="0" timestamp="10-10-2024T14:32:47" hostname="ngocanh - localhost" id="Test Suites/Quản lý tài khoản merchant/Chuyển tiền">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/ngocanh/Downloads/D_CMS_9Pay-master 4/Reports/20241010_143236/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/Chuy\u1EC3n ti\u1EC1n/20241010_143236"/>
+         <property name="logFiles" value="/Users/ngocanh/Downloads/D_CMS_9Pay-master 4/Reports/20241010_143236/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/Chuy\u1EC3n ti\u1EC1n/20241010_143236/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ngocanh - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.5.0.217"/>
+         <property name="browser" value="Chrome 129.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="54418cbee483c2c56e95d4a17a0af267"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_01_Kiểm tra mở form chuyển tiền và đúng tên tài khoản" time="51.637" classname="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_01_Kiểm tra mở form chuyển tiền và đúng tên tài khoản" status="PASSED">
+         <system-out><![CDATA[10-10-2024T14:32:48 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_01_Kiểm tra mở form chuyển tiền và đúng tên tài khoản: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_01_Kiểm tra mở form chuyển tiền và đúng tên tài khoản
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - url = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV"): null
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - else: null
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - url = "https://stg-cms-console.9pay.mobi/login": null
+
+10-10-2024T14:32:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+10-10-2024T14:32:49 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+10-10-2024T14:32:49 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+10-10-2024T14:32:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+10-10-2024T14:32:54 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+10-10-2024T14:32:55 - [MESSAGE][PASSED] - Current window maximized
+
+10-10-2024T14:32:55 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:33:03 - [MESSAGE][PASSED] - Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:33:03 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:33:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Login/LoginCommon"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:33:03 - [TEST_CASE][PASSED] - Test Cases/Login/LoginCommon: Test Cases/Login/LoginCommon
+
+10-10-2024T14:33:04 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:33:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox"), userAccount): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:33:06 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:33:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox"), password): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:33:07 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:33:07 - [TEST_STEP][PASSED] - click(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton")): Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:33:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:33:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:33:07 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Trang chủ/userName"), 10, STOP_ON_FAILURE): Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:33:16 - [MESSAGE][PASSED] - Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:33:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:33:16 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:33:17 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:33:17 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:33:19 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:33:19 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:33:19 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:33:19 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:33:19 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:33:20 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:33:20 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:33:24 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:33:25 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:33:26 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:33:26 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:33:27 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:33:27 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:33:28 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:33:29 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:33:29 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:33:30 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:33:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:33:30 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:33:30 - [TEST_STEP][PASSED] - xpath(xpathTranfer)).click(): null
+
+10-10-2024T14:33:32 - [TEST_STEP][PASSED] - textUser = xpath(xpathTextAccount))).getText(): null
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - if (textUser == username): Test case đã pass vì đã vào màn hình chuyển tiền.
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - println("Đã vào màn hình chuyển tiền thành công"): null
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - markPassed("Test case đã pass vì đã vào màn hình chuyển tiền."): Test case đã pass vì đã vào màn hình chuyển tiền.
+
+10-10-2024T14:33:39 - [MESSAGE][PASSED] - Test case đã pass vì đã vào màn hình chuyển tiền.
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:33:39 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_02_Kiểm tra validate khi cùng merchant" time="135.24" classname="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_02_Kiểm tra validate khi cùng merchant" status="PASSED">
+         <system-out><![CDATA[10-10-2024T14:33:39 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_02_Kiểm tra validate khi cùng merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_02_Kiểm tra validate khi cùng merchant
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - url = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV"): null
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - else: null
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - url = "https://stg-cms-console.9pay.mobi/login": null
+
+10-10-2024T14:33:40 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+10-10-2024T14:33:40 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+10-10-2024T14:33:40 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+10-10-2024T14:33:40 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+10-10-2024T14:33:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+10-10-2024T14:33:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+10-10-2024T14:33:43 - [MESSAGE][PASSED] - Current window maximized
+
+10-10-2024T14:33:43 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:33:57 - [MESSAGE][PASSED] - Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - amount = 100000: null
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - amountMax = 9999999999: null
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Login/LoginCommon"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:33:58 - [TEST_CASE][PASSED] - Test Cases/Login/LoginCommon: Test Cases/Login/LoginCommon
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox"), userAccount): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:33:58 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:33:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox"), password): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:33:59 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:33:59 - [TEST_STEP][PASSED] - click(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton")): Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:33:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:33:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Trang chủ/userName"), 10, STOP_ON_FAILURE): Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:34:13 - [MESSAGE][PASSED] - Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:34:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:34:14 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:34:14 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:34:14 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:34:16 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:34:16 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:34:16 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:34:16 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:34:16 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:34:17 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:34:17 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:34:21 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:34:22 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:34:22 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:34:23 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:34:23 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:34:24 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:34:25 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:34:26 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:34:26 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:34:26 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:34:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:34:27 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:34:27 - [TEST_STEP][PASSED] - xpath(xpathTranfer)).click(): null
+
+10-10-2024T14:34:29 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:34:38 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:34:38 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:34:39 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:34:40 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:34:40 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViChuyen1)).getText(), "Vui lòng chọn ví chuyển."): null
+
+10-10-2024T14:34:41 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathNhapSoTienChuyen)).getText(), "Vui lòng nhập số tiền chuyển."): null
+
+10-10-2024T14:34:41 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViNhan1)).getText(), "Vui lòng chọn ví nhận."): null
+
+10-10-2024T14:34:41 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:34:42 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:34:49 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:34:50 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:34:50 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:34:51 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:34:52 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:34:52 - [TEST_STEP][PASSED] - xpath(xpathThuHo)).click(): null
+
+10-10-2024T14:34:53 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:34:53 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViChuyen1)).getText(), "Vui lòng chọn ví chuyển."): null
+
+10-10-2024T14:34:54 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:34:54 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:35:02 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:35:03 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:35:04 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:35:05 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:35:05 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:35:05 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:35:06 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:35:06 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViNhan1)).getText(), "Vui lòng chọn ví nhận."): null
+
+10-10-2024T14:35:07 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:35:07 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:35:25 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:35:25 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:35:26 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:35:27 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:35:27 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:35:27 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:35:28 - [TEST_STEP][PASSED] - xpath(xpathThuHo)).click(): null
+
+10-10-2024T14:35:28 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:35:29 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathNhapSoTienChuyen)).getText(), "Vui lòng nhập số tiền chuyển."): null
+
+10-10-2024T14:35:29 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:35:30 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:35:37 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:35:38 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:35:39 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:35:39 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amountMax): null
+
+10-10-2024T14:35:40 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:35:40 - [TEST_STEP][PASSED] - xpath(xpathChiHo2)).click(): null
+
+10-10-2024T14:35:40 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:35:41 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:35:41 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:35:42 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathKhongDuTien)).getText(), "Tài khoản ví không đủ tiền để thực hiện giao dịch"): null
+
+10-10-2024T14:35:42 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:35:43 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:35:49 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:35:49 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:35:50 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:35:51 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:35:51 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:35:52 - [TEST_STEP][PASSED] - xpath(xpathThuHo)).click(): null
+
+10-10-2024T14:35:52 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:35:53 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:35:53 - [TEST_STEP][PASSED] - xpath(xpathConfirm)).click(): null
+
+10-10-2024T14:35:54 - [TEST_STEP][PASSED] - xpath(xpathDepositOkBtn)).click(): null
+
+10-10-2024T14:35:54 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathViNhanKhacViChuyen)).getText(), "Ví nhận phải khác ví chuyển"): null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_03_Kiểm tra validate khi khác merchant" time="110.566" classname="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_03_Kiểm tra validate khi khác merchant" status="PASSED">
+         <system-out><![CDATA[10-10-2024T14:35:55 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_03_Kiểm tra validate khi khác merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_03_Kiểm tra validate khi khác merchant
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - url = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV"): null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - else: null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - url = "https://stg-cms-console.9pay.mobi/login": null
+
+10-10-2024T14:35:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+10-10-2024T14:35:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+10-10-2024T14:35:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+10-10-2024T14:35:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+10-10-2024T14:35:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+10-10-2024T14:35:57 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+10-10-2024T14:35:58 - [MESSAGE][PASSED] - Current window maximized
+
+10-10-2024T14:35:58 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:36:05 - [MESSAGE][PASSED] - Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - amount = 100000: null
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - amountMax = 9999999999: null
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Login/LoginCommon"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:36:06 - [TEST_CASE][PASSED] - Test Cases/Login/LoginCommon: Test Cases/Login/LoginCommon
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox"), userAccount): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:36:06 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:36:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox"), password): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:36:07 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:36:07 - [TEST_STEP][PASSED] - click(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton")): Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:36:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:36:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:36:07 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Trang chủ/userName"), 10, STOP_ON_FAILURE): Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:36:15 - [MESSAGE][PASSED] - Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:36:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:36:15 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:36:15 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:36:15 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:36:17 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:36:17 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:36:17 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:36:18 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:36:18 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:36:18 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:36:18 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:36:24 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:36:25 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:36:25 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:36:26 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:36:26 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:36:27 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:36:28 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:36:28 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:36:29 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:36:30 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:36:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:36:30 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:36:30 - [TEST_STEP][PASSED] - xpath(xpathTranfer)).click(): null
+
+10-10-2024T14:36:32 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:36:40 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:36:40 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:36:41 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:36:41 - [TEST_STEP][PASSED] - xpath(xpathBtnConfirm)).click(): null
+
+10-10-2024T14:36:42 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:36:42 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChuyenKhacMC)).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:36:42 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:36:43 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViChuyen1)).getText(), "Vui lòng chọn ví chuyển."): null
+
+10-10-2024T14:36:43 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathNhapSoTienChuyen)).getText(), "Vui lòng nhập số tiền chuyển."): null
+
+10-10-2024T14:36:43 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViNhan1)).getText(), "Vui lòng chọn ví nhận."): null
+
+10-10-2024T14:36:44 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:36:44 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:36:52 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:36:53 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:36:53 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:36:54 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:36:55 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:36:55 - [TEST_STEP][PASSED] - xpath(xpathThuHo)).click(): null
+
+10-10-2024T14:36:55 - [TEST_STEP][PASSED] - xpath(xpathBtnConfirm)).click(): null
+
+10-10-2024T14:36:56 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:36:56 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChuyenKhacMC)).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:36:57 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:36:57 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViChuyen1)).getText(), "Vui lòng chọn ví chuyển."): null
+
+10-10-2024T14:36:57 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:36:58 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:37:15 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:37:15 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:37:16 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:37:17 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:37:17 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:37:18 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:37:18 - [TEST_STEP][PASSED] - xpath(xpathBtnConfirm)).click(): null
+
+10-10-2024T14:37:19 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:37:19 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChuyenKhacMC)).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:37:19 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:37:20 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChonViNhan1)).getText(), "Vui lòng chọn ví nhận."): null
+
+10-10-2024T14:37:20 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:37:21 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:37:26 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:37:27 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:37:28 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:37:28 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:37:29 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:37:29 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:37:30 - [TEST_STEP][PASSED] - xpath(xpathThuHo)).click(): null
+
+10-10-2024T14:37:30 - [TEST_STEP][PASSED] - xpath(xpathBtnConfirm)).click(): null
+
+10-10-2024T14:37:31 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:37:31 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChuyenKhacMC)).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:37:31 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:37:32 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathNhapSoTienChuyen)).getText(), "Vui lòng nhập số tiền chuyển."): null
+
+10-10-2024T14:37:32 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:37:33 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:37:38 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:37:39 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:37:40 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:37:40 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amountMax): null
+
+10-10-2024T14:37:41 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:37:41 - [TEST_STEP][PASSED] - xpath(xpathChiHo2)).click(): null
+
+10-10-2024T14:37:42 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:37:42 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:37:43 - [TEST_STEP][PASSED] - xpath(xpathBtnConfirm)).click(): null
+
+10-10-2024T14:37:43 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:37:44 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathChuyenKhacMC)).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:37:44 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:37:44 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathSoDuKhaDungKhongDu)).getText(), "Số dư khả dụng không đủ để thực hiện giao dịch"): null
+
+10-10-2024T14:37:45 - [TEST_STEP][PASSED] - xpath(xpathDepositOkBtn)).click(): null
+
+10-10-2024T14:37:45 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+10-10-2024T14:37:45 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:37:45 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant" time="64.746" classname="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.&#xa;	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)&#xa;	at TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant.run(TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant:86)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[10-10-2024T14:37:45 - [TEST_CASE][FAILED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant.run(TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant:86)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - url = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV"): null
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - else: null
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - url = "https://stg-cms-console.9pay.mobi/login": null
+
+10-10-2024T14:37:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+10-10-2024T14:37:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+10-10-2024T14:37:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+10-10-2024T14:37:46 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+10-10-2024T14:37:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+10-10-2024T14:37:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+10-10-2024T14:37:49 - [MESSAGE][PASSED] - Current window maximized
+
+10-10-2024T14:37:49 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:37:52 - [MESSAGE][PASSED] - Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - amount = 100000: null
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Login/LoginCommon"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:37:53 - [TEST_CASE][PASSED] - Test Cases/Login/LoginCommon: Test Cases/Login/LoginCommon
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox"), userAccount): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:37:53 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:37:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox"), password): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:37:54 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:37:54 - [TEST_STEP][PASSED] - click(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton")): Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:37:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:37:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:37:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Trang chủ/userName"), 10, STOP_ON_FAILURE): Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:37:56 - [MESSAGE][PASSED] - Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:37:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:37:56 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:37:56 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:37:56 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:37:58 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:37:59 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:38:15 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:38:16 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:38:16 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:38:17 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:38:17 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:38:17 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:38:18 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:38:19 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:38:19 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:38:20 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:38:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:38:20 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:38:20 - [TEST_STEP][PASSED] - startElement = driver.findElement(By.xpath(xpathChiHoBtn)): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - js = driver: null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - script = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - nextTextNodeContent = js.executeScript(script, startElement): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - out.println("chiHoWallet " + nextTextNodeContent): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - numericString = nextTextNodeContent.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - chiHoBf = Integer.parseInt(numericString): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - out.println("Chi ho " + chiHoBf): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - thuHoElm = driver.findElement(By.xpath(xpathThuHoBtn)): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - jsBF = driver: null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - scriptBF = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - thuHoWallet = js.executeScript(scriptBF, thuHoElm): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - thuHoInt = thuHoWallet.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - thuHoBf = Integer.parseInt(thuHoInt): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - out.println("Thu ho " + thuHoBf): null
+
+10-10-2024T14:38:21 - [TEST_STEP][PASSED] - xpath(xpathTranfer)).click(): null
+
+10-10-2024T14:38:22 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:38:28 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:38:28 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username): null
+
+10-10-2024T14:38:29 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:38:29 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:38:30 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:38:30 - [TEST_STEP][PASSED] - xpath(xpathChiHo2)).click(): null
+
+10-10-2024T14:38:31 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:38:31 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:38:32 - [TEST_STEP][PASSED] - xpath(xpathButtonSubmit)).click(): null
+
+10-10-2024T14:38:32 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAfterAccept))): null
+
+10-10-2024T14:38:34 - [TEST_STEP][PASSED] - rutTien = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextTitle))): null
+
+10-10-2024T14:38:34 - [TEST_STEP][PASSED] - Assert.assertEquals(rutTien.getText(), "Rút tiền"): null
+
+10-10-2024T14:38:34 - [TEST_STEP][PASSED] - approveTss = driver.findElement(By.xpath(xpathBtnDuyetGDRut)): null
+
+10-10-2024T14:38:34 - [TEST_STEP][PASSED] - js.executeScript("arguments[0].scrollIntoView(false);", approveTss): null
+
+10-10-2024T14:38:34 - [TEST_STEP][PASSED] - approveTss.click(): null
+
+10-10-2024T14:38:35 - [TEST_STEP][PASSED] - Thread.sleep(1000): null
+
+10-10-2024T14:38:36 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:38:36 - [TEST_STEP][PASSED] - xpath(xpathBtnOk)).click(): null
+
+10-10-2024T14:38:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:38:37 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:38:37 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:38:37 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:38:39 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:38:39 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:38:39 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:38:39 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:38:39 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:38:40 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:38:40 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:38:44 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:38:44 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:38:45 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:38:45 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:38:46 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:38:46 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:38:47 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:38:47 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:38:48 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:38:48 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:38:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:38:49 - [TEST_STEP][PASSED] - chiHoAf = driver.findElement(By.xpath(xpathChiHoBtn)): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - jsChiHoAf = driver: null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - chihoAf = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - chihointaf = js.executeScript(chihoAf, chiHoAf): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - out.println("chiHoWallet " + chihointaf): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - numericString1 = chihointaf.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - chiHoAf1 = Integer.parseInt(numericString1): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - out.println("Chi ho " + chiHoAf1): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - thuHoElm1 = driver.findElement(By.xpath(xpathThuHoBtn)): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - jsAf = driver: null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - scriptAf = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - thuHoWalletAf = js.executeScript(scriptAf, thuHoElm1): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - thuHoIntAf = thuHoWalletAf.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - thuHoAf = Integer.parseInt(thuHoIntAf): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - amountInt = Integer.parseInt(amount): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - out.println("Thu ho " + thuHoAf): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - if (chiHoBf + amountInt == chiHoAf1 && thuHoAf + amountInt == thuHoBf): null
+
+10-10-2024T14:38:50 - [TEST_STEP][FAILED] - else: Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - println("Số tiền chưa được cộng đúng"): null
+
+10-10-2024T14:38:50 - [TEST_STEP][FAILED] - markFailed("Test case đã fail với số tiền chưa được cộng đúng."): Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:38:50 - [MESSAGE][FAILED] - Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA"): null]]></system-out>
+         <system-err><![CDATA[10-10-2024T14:37:45 - [TEST_CASE][FAILED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant.run(TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant:86)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant" time="70.52" classname="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.&#xa;	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)&#xa;	at TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant.run(TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant:113)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[10-10-2024T14:38:50 - [TEST_CASE][FAILED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant.run(TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant:113)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - url = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV"): null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - else: null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - url = "https://stg-cms-console.9pay.mobi/login": null
+
+10-10-2024T14:38:50 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+10-10-2024T14:38:50 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+10-10-2024T14:38:50 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+10-10-2024T14:38:50 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+10-10-2024T14:38:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+10-10-2024T14:38:53 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+10-10-2024T14:38:53 - [MESSAGE][PASSED] - Current window maximized
+
+10-10-2024T14:38:53 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:38:59 - [MESSAGE][PASSED] - Navigate to 'https://stg-cms-console.9pay.mobi/login' successfully
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - js = driver: null
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - amount = 100000: null
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Login/LoginCommon"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:39:00 - [TEST_CASE][PASSED] - Test Cases/Login/LoginCommon: Test Cases/Login/LoginCommon
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox"), userAccount): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:39:00 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/userNameTextbox'
+
+10-10-2024T14:39:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox"), password): Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:39:01 - [MESSAGE][PASSED] - Keys 'dannt@9pay.vn' sent to object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/passwordTextbox'
+
+10-10-2024T14:39:01 - [TEST_STEP][PASSED] - click(findTestObject("Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton")): Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:39:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/loginButton' is clicked on
+
+10-10-2024T14:39:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/LoginCommon' successfully
+
+10-10-2024T14:39:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Trang chủ/userName"), 10, STOP_ON_FAILURE): Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:39:14 - [MESSAGE][PASSED] - Object 'Object Repository/Trang chủ/userName' is visible
+
+10-10-2024T14:39:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:39:15 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:39:15 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:39:15 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:39:17 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:39:17 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:39:17 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:39:17 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:39:17 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:39:18 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:39:18 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:39:23 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:39:23 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:39:24 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:39:24 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:39:25 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:39:25 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:39:26 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:39:26 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:39:27 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:39:27 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:39:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:39:28 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:39:28 - [TEST_STEP][PASSED] - thuHoElm = driver.findElement(By.xpath(xpathStrongText1)): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - scriptBF = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - thuHoWallet = js.executeScript(scriptBF, thuHoElm): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - thuHoInt = thuHoWallet.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - thuHoBf = Integer.parseInt(thuHoInt): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - out.println("Thu ho ví chuyển trước " + thuHoBf): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - startElement1 = driver.findElement(By.xpath(xpathStrongText2)): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - script1 = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - nextTextNodeContent1 = js.executeScript(script1, startElement1): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - out.println("chiHoWallet " + nextTextNodeContent1): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - numericString1 = nextTextNodeContent1.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - chiHoBf1 = Integer.parseInt(numericString1): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - out.println("Chi ho ví nhận trước gd " + chiHoBf1): null
+
+10-10-2024T14:39:29 - [TEST_STEP][PASSED] - xpath(xpathTranfer)).click(): null
+
+10-10-2024T14:39:30 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAccount))): null
+
+10-10-2024T14:39:37 - [TEST_STEP][PASSED] - xpath(xpathTaiKhoanNhan)).click(): null
+
+10-10-2024T14:39:37 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox1)).sendKeys(username1): null
+
+10-10-2024T14:39:38 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:39:38 - [TEST_STEP][PASSED] - xpath(xpathDepositTextbox)).sendKeys(amount): null
+
+10-10-2024T14:39:39 - [TEST_STEP][PASSED] - xpath(xpathChonViNhan)).click(): null
+
+10-10-2024T14:39:39 - [TEST_STEP][PASSED] - xpath(xpathChiHo2)).click(): null
+
+10-10-2024T14:39:40 - [TEST_STEP][PASSED] - xpath(xpathChonViChuyen)).click(): null
+
+10-10-2024T14:39:40 - [TEST_STEP][PASSED] - xpath(xpathThuHo1)).click(): null
+
+10-10-2024T14:39:41 - [TEST_STEP][PASSED] - xpath(xpathButtonSubmit)).click(): null
+
+10-10-2024T14:39:41 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.elementToBeClickable(By.xpath(BtnOkXpath))): null
+
+10-10-2024T14:39:42 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath("//p[contains(text(),'Bạn đang chuyển tiền khác sub-merchant?')]")).getText(), "Bạn đang chuyển tiền khác sub-merchant?"): null
+
+10-10-2024T14:39:42 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:39:42 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextAfterAccept))): null
+
+10-10-2024T14:39:43 - [TEST_STEP][PASSED] - navigate().refresh(): null
+
+10-10-2024T14:39:43 - [TEST_STEP][PASSED] - rutTien = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathTextTitle))): null
+
+10-10-2024T14:39:44 - [TEST_STEP][PASSED] - Assert.assertEquals(rutTien.getText(), "Rút tiền"): null
+
+10-10-2024T14:39:44 - [TEST_STEP][PASSED] - approveTss = driver.findElement(By.xpath(xpathBtnDuyetGDRut)): null
+
+10-10-2024T14:39:45 - [TEST_STEP][PASSED] - js.executeScript("arguments[0].scrollIntoView(false);", approveTss): null
+
+10-10-2024T14:39:45 - [TEST_STEP][PASSED] - approveTss.click(): null
+
+10-10-2024T14:39:45 - [TEST_STEP][PASSED] - Thread.sleep(1000): null
+
+10-10-2024T14:39:46 - [TEST_STEP][PASSED] - xpath(BtnOkXpath)).click(): null
+
+10-10-2024T14:39:46 - [TEST_STEP][PASSED] - xpath(xpathBtnOk)).click(): null
+
+10-10-2024T14:39:47 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:39:47 - [TEST_CASE][PASSED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy
+
+10-10-2024T14:39:47 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+10-10-2024T14:39:47 - [TEST_STEP][PASSED] - sleep(2000): null
+
+10-10-2024T14:39:49 - [TEST_STEP][PASSED] - element1 = driver.findElement(By.xpath(xpathManagerMC)): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - click().perform(): null
+
+10-10-2024T14:39:50 - [TEST_STEP][PASSED] - wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))): null
+
+10-10-2024T14:39:54 - [TEST_STEP][PASSED] - xpath(xpathBtnAccount))).click(): null
+
+10-10-2024T14:39:55 - [TEST_STEP][PASSED] - searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))): null
+
+10-10-2024T14:39:55 - [TEST_STEP][PASSED] - searchTextbox.sendKeys("dannt11"): null
+
+10-10-2024T14:39:56 - [TEST_STEP][PASSED] - xpath(xpathOption)).click(): null
+
+10-10-2024T14:39:56 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:39:57 - [TEST_STEP][PASSED] - Assert.assertEquals(xpath(xpathAccountName)).getText(), username): null
+
+10-10-2024T14:39:57 - [TEST_STEP][PASSED] - xpath(xpathUser)).click(): null
+
+10-10-2024T14:39:58 - [TEST_STEP][PASSED] - xpath(xpathSearchTextbox)).sendKeys("dannt21"): null
+
+10-10-2024T14:39:59 - [TEST_STEP][PASSED] - xpath(xpathClicked)).click(): null
+
+10-10-2024T14:39:59 - [TEST_STEP][PASSED] - xpath(xpathBtnSearch)).click(): null
+
+10-10-2024T14:40:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy' successfully
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - thuHoElm12 = driver.findElement(By.xpath(xpathStrongText1)): null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - scriptAf = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - thuHoWalletAf = js.executeScript(scriptAf, thuHoElm12): null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - thuHoIntAf = thuHoWalletAf.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - thuHoAf = Integer.parseInt(thuHoIntAf): null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - out.println("Thu ho ví chuyển sau gd " + thuHoAf): null
+
+10-10-2024T14:40:00 - [TEST_STEP][PASSED] - startElement2 = driver.findElement(By.xpath(xpathStrongText2)): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - script2 = "return arguments[0].nextSibling.textContent;": null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - nextTextNodeContentAf1 = js.executeScript(script2, startElement2): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - out.println("chiHoWallet " + nextTextNodeContentAf1): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - numberBalance = nextTextNodeContentAf1.replaceAll("[^0-9]", ""): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - chiHoBf2 = Integer.parseInt(numberBalance): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - out.println("Chi ho ví nhận sau gd " + chiHoBf2): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - amountInt = Integer.parseInt(amount): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - sotienThu = thuHoBf - amountInt: null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - sotienChuyen = chiHoBf1 + amountInt: null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - out.println("Chi ho ví nhận sau gd " + sotienThu): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - out.println("Chi ho ví nhận sau gd " + sotienChuyen): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - if (thuHoBf - amountInt == thuHoAf && chiHoBf1 + amountInt == chiHoBf2): null
+
+10-10-2024T14:40:01 - [TEST_STEP][FAILED] - else: Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - println("Số tiền chưa được cộng đúng"): null
+
+10-10-2024T14:40:01 - [TEST_STEP][FAILED] - markFailed("Test case đã fail với số tiền chưa được cộng đúng."): Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:40:01 - [MESSAGE][FAILED] - Test case đã fail với số tiền chưa được cộng đúng.
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+10-10-2024T14:40:01 - [TEST_STEP][PASSED] - if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA"): null]]></system-out>
+         <system-err><![CDATA[10-10-2024T14:38:50 - [TEST_CASE][FAILED] - Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant.run(TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant:113)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[10-10-2024T14:32:47 - [TEST_SUITE][FAILED] - Chuyển tiền: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant.run(TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant:86)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[10-10-2024T14:32:47 - [TEST_SUITE][FAILED] - Chuyển tiền: Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Chuyển tiền/TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Test case đã fail với số tiền chưa được cộng đúng.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant.run(TC_04_Kiểm tra khi chuyển tiền thành công cùng merchant:86)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1728545556957.run(TempTestSuite1728545556957.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Nhập số tiền là ký tự đặc biệt và chữ nhấn Xác Nhận</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe0947e4-dab6-4cdc-b283-4fbc2e0c5373</testCaseGuid>
+</TestCaseEntity>

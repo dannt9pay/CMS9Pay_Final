@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_04_Kiểm tra khi nhập số tiền lớn hơn số dư khả dụng</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dfc177d6-df5b-4d4b-b2e6-bf8b5c2d93f4</testCaseGuid>
+</TestCaseEntity>

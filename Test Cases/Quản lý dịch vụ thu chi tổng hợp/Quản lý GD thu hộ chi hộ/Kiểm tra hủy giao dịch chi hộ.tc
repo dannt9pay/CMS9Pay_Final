@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra hủy giao dịch chi hộ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b10ca0f0-cdfd-4be5-b879-5064af54cfea</testCaseGuid>
+</TestCaseEntity>

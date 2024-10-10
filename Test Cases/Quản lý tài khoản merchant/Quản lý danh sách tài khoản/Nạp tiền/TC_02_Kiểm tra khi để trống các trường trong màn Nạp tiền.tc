@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_02_Kiểm tra khi để trống các trường trong màn Nạp tiền</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6073ab04-599c-430a-9e69-2404fbbe470f</testCaseGuid>
+</TestCaseEntity>

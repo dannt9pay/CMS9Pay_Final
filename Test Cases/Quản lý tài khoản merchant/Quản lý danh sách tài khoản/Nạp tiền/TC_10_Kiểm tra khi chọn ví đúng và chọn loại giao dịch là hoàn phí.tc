@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_10_Kiểm tra khi chọn ví đúng và chọn loại giao dịch là hoàn phí</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>87a51cfc-74da-4aa8-98e2-733898108f10</testCaseGuid>
+</TestCaseEntity>

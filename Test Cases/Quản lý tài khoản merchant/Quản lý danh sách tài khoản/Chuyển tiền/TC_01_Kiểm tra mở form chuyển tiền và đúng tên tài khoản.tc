@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_01_Kiểm tra mở form chuyển tiền và đúng tên tài khoản</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bae99424-1834-4d74-8e26-4a4eb8a18667</testCaseGuid>
+</TestCaseEntity>

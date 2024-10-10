@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_KIểm tra khi nhập số tiền đúng và nhấn xác nhận</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c481d3a6-afdc-455d-835a-d5971920e56e</testCaseGuid>
+</TestCaseEntity>

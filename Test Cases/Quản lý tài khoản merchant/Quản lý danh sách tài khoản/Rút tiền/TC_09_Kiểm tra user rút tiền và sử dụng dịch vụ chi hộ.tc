@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_09_Kiểm tra user rút tiền và sử dụng dịch vụ chi hộ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>416eaac1-b675-4541-b8a2-104367c53d92</testCaseGuid>
+</TestCaseEntity>

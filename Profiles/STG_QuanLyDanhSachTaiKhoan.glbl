@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>STG_QuanLyDanhSachTaiKhoan</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stg-cms-console.9pay.mobi/login'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>userAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'NẠP TIỀN'</initValue>
+      <name>titleText</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt11'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//th[contains(text(),\'Mã tài khoản\')]'</initValue>
+      <name>xpathUserCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Quản lý tài khoản merchant\')]'</initValue>
+      <name>xpathManagerMC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[contains(text(),\'Quản lý danh sách tài khoản\')]'</initValue>
+      <name>xpathManagerListAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Tài khoản\')]'</initValue>
+      <name>xpathBtnAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//div[@class=\'bs-searchbox\']//input[@type=\'text\'])[1]'</initValue>
+      <name>xpathSearchTextbox</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[@tabindex=\'0\' and @class=\'\' and @data-tokens=\'null\']/span[@class=\'text\' and contains(text(), \'dannt11\')]'</initValue>
+      <name>xpathOption</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathAccountName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[@class=\'item-tool\']//i[@class=\'material-icons\'][normalize-space()=\'attach_money\']'</initValue>
+      <name>xpathBtnDeposit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//h2[contains(text(),\'NẠP TIỀN\')]'</initValue>
+      <name>xpathTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Tìm kiếm\')]'</initValue>
+      <name>xpathBtnSearch</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[@class=\'filter-option pull-left\'][normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathTextAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn btn-lg btn-primary waves-effect\']'</initValue>
+      <name>xpathBtnContinue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng chọn ví dịch vụ\')]'</initValue>
+      <name>xpathErrorWallet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Vui lòng chọn ví dịch vụ'</initValue>
+      <name>errorWallet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//input[@placeholder=\'Nhập số tiền\']'</initValue>
+      <name>xpathDepositTextbox</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Xác nhận\')]'</initValue>
+      <name>xpathBtnConfirm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Tham số không hợp lệ\')]'</initValue>
+      <name>xpathErrorDepositBlank</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[normalize-space()=\'Ok\']'</initValue>
+      <name>xpathDepositOkBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng nhập số tiền.\')]'</initValue>
+      <name>xpathErrorDeposit1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Vui lòng nhập số tiền.'</initValue>
+      <name>errorDepositBlank</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'amount phải là chữ số.\')]'</initValue>
+      <name>xpathErrorSpecialChar</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'amount phải là chữ số.'</initValue>
+      <name>errorSpecialChar</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Xác nhận\')]'</initValue>
+      <name>xpathButtonSubmit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//h2[contains(text(),\'THÔNG TIN GIAO DỊCH\')]'</initValue>
+      <name>xpathTextAfterAccept</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'DUYỆT GIAO DỊCH NẠP\')]'</initValue>
+      <name>xpathButtonApprove</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Đồng ý\')]'</initValue>
+      <name>xpathCfBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Ok\')]'</initValue>
+      <name>xpathBtnOk</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Đồng ý\')]'</initValue>
+      <name>BtnOkXpath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt21'</initValue>
+      <name>userNotSerice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//i[normalize-space()=\'autorenew\'])[1]'</initValue>
+      <name>xpathTranfer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt21'</initValue>
+      <name>username1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[normalize-space()=\'dannt21\']'</initValue>
+      <name>xpathAccountName1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//i[normalize-space()=\'money_off\']'</initValue>
+      <name>xpathBtnRutTien</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[@class=\'filter-option pull-left\'][normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathUser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'bs-searchbox focused\']//input[@type=\'text\']'</initValue>
+      <name>xpathUser2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[@class=\'active\']//child::span[contains(.,\'dannt21\')]'</initValue>
+      <name>xpathUserClicked</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Chọn ví rút\')]'</initValue>
+      <name>xpathViRut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Thu hộ (VND)\')]'</initValue>
+      <name>xpathOptionThuho</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//input[@placeholder=\'Chọn ngày\']'</initValue>
+      <name>xpathDay</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[normalize-space()=\'Hôm nay\']'</initValue>
+      <name>xpathToday</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn btn-lg btn-primary waves-effect\']'</initValue>
+      <name>xpathDayClicked</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//input[@name=\'amount\']'</initValue>
+      <name>xpathFieldAmount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'100000'</initValue>
+      <name>amount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Xác nhận\')]'</initValue>
+      <name>xpathConfirm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Dịch vụ chưa được kích hoạt\')]'</initValue>
+      <name>xpathError1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dịch vụ chưa được kích hoạt'</initValue>
+      <name>messError</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[contains(text(),\'Chi về ngân hàng\')]'</initValue>
+      <name>UserPayIn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[normalize-space()=\'Update thành công\']'</initValue>
+      <name>xpathUpdateSuccess</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Update thất bại\')]'</initValue>
+      <name>xpathUpdateFail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'CẬP NHẬT TRẠNG THÁI THÀNH CÔNG\')]'</initValue>
+      <name>xpathParentSuccess</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chấp nhận cho rút số tiền tạm giữ\')]'</initValue>
+      <name>acceptHoldMoney</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'25000000'</initValue>
+      <name>amountPlus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'200000'</initValue>
+      <name>amountValid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>20</initValue>
+      <name>waitSecond</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Số dư Ví\')]/following::input[1]'</initValue>
+      <name>xpathLabelAvailbeWallet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//strong[contains(text(),\'Thu hộ:\')]'</initValue>
+      <name>xpathAvailbleBalancePayin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'VH DUYỆT GD RÚT LẦN 1\')]'</initValue>
+      <name>xpathAcceptFirst</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'VH DUYỆT GD RÚT LẦN 2\')]'</initValue>
+      <name>xpathAcceptSecond</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'KT DUYỆT GD RÚT LẦN 1\')]'</initValue>
+      <name>xpathAcceptThird</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'KT DUYỆT GD RÚT LẦN 2\')]'</initValue>
+      <name>xpathAcceptFinally</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//input[@type=\'text\'])[2]'</initValue>
+      <name>xpathSearchField</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'30000000'</initValue>
+      <name>amountInvalid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Chọn tk nhận\')]'</initValue>
+      <name>xpathTaiKhoanNhan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[@class=\'active\']//a'</initValue>
+      <name>xpathClicked</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Chọn ví nhận\')]'</initValue>
+      <name>xpathChonViNhan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//span[@class=\'text\'][contains(text(),\'Thu hộ (VND)\')])[2]'</initValue>
+      <name>xpathThuHo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//span[@class=\'text\'][contains(text(),\'Thu hộ (VND)\')])[1]'</initValue>
+      <name>xpathThuHo1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Chọn ví chuyển\')]'</initValue>
+      <name>xpathChonViChuyen</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng nhập số tiền chuyển.\')]'</initValue>
+      <name>xpathNhapSoTienChuyen</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//span[@class=\'text\'][contains(text(),\'Chi hộ (VND)\')])[2]'</initValue>
+      <name>xpathChiHo2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Tài khoản ví không đủ tiền để thực hiện giao dịch\')]'</initValue>
+      <name>xpathKhongDuTien</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng chọn ví chuyển.\')]'</initValue>
+      <name>xpathChonViChuyen1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng chọn ví nhận.\')]'</initValue>
+      <name>xpathChonViNhan1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Ví nhận phải khác ví chuyển\')]'</initValue>
+      <name>xpathViNhanKhacViChuyen</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Bạn đang chuyển tiền khác sub-merchant?\')]'</initValue>
+      <name>xpathChuyenKhacMC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Số dư khả dụng không đủ để thực hiện giao dịch\')]'</initValue>
+      <name>xpathSoDuKhaDungKhongDu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//strong[contains(text(),\'Chi hộ:\')]'</initValue>
+      <name>xpathChiHoBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//strong[contains(text(),\'Thu hộ:\')]'</initValue>
+      <name>xpathThuHoBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[contains(text(),\'Rút tiền\')]'</initValue>
+      <name>xpathTextTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//strong[contains(text(),\'Thu hộ:\')])[1]'</initValue>
+      <name>xpathStrongText1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//strong[contains(text(),\'Chi hộ:\')])[2]'</initValue>
+      <name>xpathStrongText2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'(//div[@class=\'bs-searchbox\']//input[@type=\'text\'])[2]'</initValue>
+      <name>xpathSearchTextbox1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'DUYỆT GIAO DỊCH RÚT\')]'</initValue>
+      <name>xpathBtnDuyetGDRut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Chọn ví\')]'</initValue>
+      <name>xpathChonVi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Thu hộ (VND)\')]'</initValue>
+      <name>xpathThuHo3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng chọn kỳ đối soát\')]'</initValue>
+      <name>xpathChonKiDoiSoat</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[normalize-space()=\'Hôm qua\']'</initValue>
+      <name>xpathHomQua</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Tham số không hợp lệ\')]'</initValue>
+      <name>xpathThamSoSai</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'amount phải là chữ số.\')]'</initValue>
+      <name>xpathLoiAmountLaChu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[normalize-space()=\'Hôm nay\']'</initValue>
+      <name>xpathHomNay</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//p[contains(text(),\'Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn \')]'</initValue>
+      <name>xpathXacNhanKiDS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Huỷ\')]'</initValue>
+      <name>xpathBtnHuy</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[.//span[contains(text(), \'dannt11\')]]'</initValue>
+      <name>xpathDannt11</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[contains(text(),\'Nạp tiền\')]'</initValue>
+      <name>xpathNapTien</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[@class=\'filter-option pull-left\'][contains(text(),\'Nạp tiền\')]'</initValue>
+      <name>xpathOptionNapTien</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[normalize-space()=\'Hoàn phí\']'</initValue>
+      <name>xpathOptionHoanPhi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'DUYỆT GIAO DỊCH NẠP\')]'</initValue>
+      <name>xpathDuyetGDNap</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[normalize-space()=\'Hoàn phí\']'</initValue>
+      <name>xpathHoanPhi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'THU HỒI\')]'</initValue>
+      <name>xpathThuHoi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//i[normalize-space()=\'money_off\']'</initValue>
+      <name>xpathMoneyOff</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'tab-item active\']'</initValue>
+      <name>xpathActiveItem</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Thu hộ (VND)\')]//parent::a'</initValue>
+      <name>xpathParentThuHo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Số dư khả dụng\')]//parent::div//following-sibling::div//input'</initValue>
+      <name>xpathSoDuKhaDung</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Số dư Ví\')]//parent::div//following-sibling::div//input'</initValue>
+      <name>xpathSoDuVi</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

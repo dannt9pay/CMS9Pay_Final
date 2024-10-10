@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_07_Kiểm tra khi rút tiền thành công và duyệt đủ 4 bước</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67713570-9bd0-4c9a-b9ef-2a7fcf46eaf6</testCaseGuid>
+</TestCaseEntity>

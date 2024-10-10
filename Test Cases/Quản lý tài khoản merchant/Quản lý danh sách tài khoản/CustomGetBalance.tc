@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CustomGetBalance</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8d12f26b-c411-4867-abe1-caa2ccdfb90b</testCaseGuid>
+</TestCaseEntity>

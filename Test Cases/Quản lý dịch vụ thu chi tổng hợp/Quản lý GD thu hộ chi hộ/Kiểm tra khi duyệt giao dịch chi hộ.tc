@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra khi duyệt giao dịch chi hộ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>72569cca-1cee-465e-901a-a2edfe24d200</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_07_Nhập số tiền đúng và chọn kì đối soát đã có trước đó và nhấn Huỷ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>009141f6-467b-48a7-ab96-fadc4c5a58c5</testCaseGuid>
+</TestCaseEntity>

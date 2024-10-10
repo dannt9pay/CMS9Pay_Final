@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Kiểm tra khi nhập số tiền bé hơn số tiền khả dụng</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db28ee37-1b3f-4c9c-95bf-efdc9a53d36f</testCaseGuid>
+</TestCaseEntity>

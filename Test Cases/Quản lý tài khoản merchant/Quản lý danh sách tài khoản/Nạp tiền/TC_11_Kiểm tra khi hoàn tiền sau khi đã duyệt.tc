@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_11_Kiểm tra khi hoàn tiền sau khi đã duyệt</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>01455dd7-ab89-4336-a24f-98fbbc0dd659</testCaseGuid>
+</TestCaseEntity>

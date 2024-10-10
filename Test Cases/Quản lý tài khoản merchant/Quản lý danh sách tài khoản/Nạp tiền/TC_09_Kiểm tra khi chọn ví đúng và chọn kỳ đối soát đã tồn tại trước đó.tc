@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_09_Kiểm tra khi chọn ví đúng và chọn kỳ đối soát đã tồn tại trước đó</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df3ef4c5-cfb8-4edc-8900-7432c18cedbb</testCaseGuid>
+</TestCaseEntity>

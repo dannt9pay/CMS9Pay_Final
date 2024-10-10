@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Kiểm tra khi chuyển tiền thành công khi chuyển khác merchant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9eb40be-734f-4f6c-ae07-90507dc6c9fc</testCaseGuid>
+</TestCaseEntity>

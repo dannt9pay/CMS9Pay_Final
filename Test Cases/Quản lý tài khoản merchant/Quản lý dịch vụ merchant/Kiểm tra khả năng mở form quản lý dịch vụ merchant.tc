@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra khả năng mở form quản lý dịch vụ merchant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7cbc83ea-32a0-46f7-ac5b-0db03a90c5ce</testCaseGuid>
+</TestCaseEntity>

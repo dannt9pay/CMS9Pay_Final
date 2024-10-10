@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Kiểm tra sau khi chuyển tiền thành công có 2 giao dịch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7cfb1354-2e50-44ef-a899-f51556363762</testCaseGuid>
+</TestCaseEntity>

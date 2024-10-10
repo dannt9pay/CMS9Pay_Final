@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_02_Kiểm tra validate khi cùng merchant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2f7263e-49e8-40ee-97ba-ddb755f5ddd8</testCaseGuid>
+</TestCaseEntity>

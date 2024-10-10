@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra chức năng search khi chọn dịch vụ là chi hộ và Inactive</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>43e81348-2c7b-47a4-9b21-4d4bfdbc6ceb</testCaseGuid>
+</TestCaseEntity>

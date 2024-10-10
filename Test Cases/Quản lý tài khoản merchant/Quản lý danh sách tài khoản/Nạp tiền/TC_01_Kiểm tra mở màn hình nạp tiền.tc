@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_01_Kiểm tra mở màn hình nạp tiền</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f13ae764-1c14-4344-82b7-2db6ca873354</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Kiểm tra khi rút tiền thành công và duyệt lần 1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3bbd4e40-5eb4-426d-9ffe-05de381efde9</testCaseGuid>
+</TestCaseEntity>

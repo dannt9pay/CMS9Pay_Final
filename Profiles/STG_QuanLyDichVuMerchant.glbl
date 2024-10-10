@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>STG_QuanLyDichVuMerchant</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stg-cms-console.9pay.mobi/login'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>userAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'NẠP TIỀN'</initValue>
+      <name>titleText</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt11'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//th[contains(text(),\'Mã tài khoản\')]'</initValue>
+      <name>xpathUserCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[contains(text(),\'Quản lý danh sách tài khoản\')]'</initValue>
+      <name>xpathManagerListAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Tài khoản\')]'</initValue>
+      <name>xpathBtnAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn-group bootstrap-select show-tick form-control type open\']//input[@type=\'text\']'</initValue>
+      <name>xpathSearchTextbox</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathOption</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//td[normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathAccountName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[@class=\'item-tool\']//i[@class=\'material-icons\'][normalize-space()=\'attach_money\']'</initValue>
+      <name>xpathBtnDeposit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//h2[contains(text(),\'NẠP TIỀN\')]'</initValue>
+      <name>xpathTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Tìm kiếm\')]'</initValue>
+      <name>xpathBtnSearch</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[@class=\'filter-option pull-left\'][normalize-space()=\'dannt11\']'</initValue>
+      <name>xpathTextAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn btn-lg btn-primary waves-effect\']'</initValue>
+      <name>xpathBtnContinue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Vui lòng chọn ví dịch vụ\')]'</initValue>
+      <name>xpathErrorWallet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Vui lòng chọn ví dịch vụ'</initValue>
+      <name>errorWallet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch từ\')]//parent::div//following-sibling::div//child::button'</initValue>
+      <name>xpathDropdownSwitchFrom</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch từ\')]//parent::div//following-sibling::div//child::span[contains(.,\'TECHCOMBANK\')]'</initValue>
+      <name>xpathOptionTCB</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch sang\')]//parent::div//following-sibling::div//child::button'</initValue>
+      <name>xpathDropdownSwitchTo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch sang\')]//parent::div//following-sibling::div//child::span[contains(.,\'VPBANK\')]'</initValue>
+      <name>xpathOptionVPTo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Thời gian bắt đầu \')]//parent::div//following-sibling::div//input[starts-with(@class,\'form-control datetimepicker\')]'</initValue>
+      <name>xpathDatePicker</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'dtp-buttons\']//child::button[contains(.,\'OK\')]'</initValue>
+      <name>xpathOkBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Thời gian kết thúc\')]//parent::div//following-sibling::div//input[starts-with(@class,\'form-control datetimepicker\')]'</initValue>
+      <name>xpathDatePickerEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'dtp\']//child::button[contains(text(),\'OK\')]'</initValue>
+      <name>xpathBtnOkEnd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch lại về\')]//parent::div//following-sibling::div//child::span[contains(.,\'TECHCOMBANK\')]'</initValue>
+      <name>xpathOptionTCBBack</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[contains(text(),\'Chuyển mạch lại về\')]//parent::div//following-sibling::div//child::button'</initValue>
+      <name>xpathOptionBack</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'CẬP NHẬT\')]'</initValue>
+      <name>xpathUpdateBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[contains(text(),\'Quản lý dịch vụ merchant\')]'</initValue>
+      <name>xpathManagerServiceMC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>xpathManagerMC</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

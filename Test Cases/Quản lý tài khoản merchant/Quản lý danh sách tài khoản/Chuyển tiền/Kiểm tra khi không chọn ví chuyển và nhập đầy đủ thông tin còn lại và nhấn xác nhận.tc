@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra khi không chọn ví chuyển và nhập đầy đủ thông tin còn lại và nhấn xác nhận</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a038bd6-126b-49b8-90fc-8b4de282d83f</testCaseGuid>
+</TestCaseEntity>

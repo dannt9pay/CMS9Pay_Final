@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>testDataDriven</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83b52a15-b749-4f07-aae6-1e1df6fe17c1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>32ba3c98-0dd7-4a1a-b6f1-056c2e843b15</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'test'</defaultValue>
+      <description></description>
+      <id>32ba3c98-0dd7-4a1a-b6f1-056c2e843b15</id>
+      <masked>false</masked>
+      <name>Search</name>
+   </variable>
+</TestCaseEntity>

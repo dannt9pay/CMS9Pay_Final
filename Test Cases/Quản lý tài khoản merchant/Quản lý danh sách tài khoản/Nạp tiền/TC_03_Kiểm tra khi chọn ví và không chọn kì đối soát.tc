@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_03_Kiểm tra khi chọn ví và không chọn kì đối soát</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3d9377d-2335-488e-99dc-953a2d86544c</testCaseGuid>
+</TestCaseEntity>

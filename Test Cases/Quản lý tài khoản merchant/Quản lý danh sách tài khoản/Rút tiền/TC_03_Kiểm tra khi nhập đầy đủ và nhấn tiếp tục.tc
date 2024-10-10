@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_03_Kiểm tra khi nhập đầy đủ và nhấn tiếp tục</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9161e2cd-3899-450c-b438-ca35700c9b56</testCaseGuid>
+</TestCaseEntity>

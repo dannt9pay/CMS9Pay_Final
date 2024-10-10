@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_01_Kiểm tra mở form Rút tiền</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>09eed537-2713-4b91-94b5-6045f1e3f024</testCaseGuid>
+</TestCaseEntity>

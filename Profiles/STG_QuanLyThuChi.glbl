@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>STG_QuanLyThuChi</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Quản lý dịch vụ Thu Chi tổng hợp\')]'</initValue>
+      <name>xpathQuanLyThuChiTongHop</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[contains(text(),\'Quản lý GD thu hộ/chi hộ\')]'</initValue>
+      <name>xpathQuanlyGDThuChiHo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>userAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dannt@9pay.vn'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[@title=\'Chọn loại giao dịch\']'</initValue>
+      <name>xpathLoaiGD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn-group bootstrap-select show-tick form-control type open\']//span[@class=\'text\'][contains(text(),\'Chi hộ\')]'</initValue>
+      <name>xpathChiHo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//div[@class=\'btn-group bootstrap-select form-control\']//span[@class=\'filter-option pull-left\'][contains(text(),\'Chọn trạng thái\')]'</initValue>
+      <name>xpathTrangThaiDT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//li[@data-original-index=&quot;3&quot;]/a/span[@class=&quot;text&quot;][contains(text(),&quot;Đang xử lý&quot;)]'</initValue>
+      <name>xpathTrangThaiDXL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Cột hiển thị\')]'</initValue>
+      <name>xpathCotHienThi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//label[@for=\'cf-partner_status\']'</initValue>
+      <name>xpathCheckTTDT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'P\')]'</initValue>
+      <name>xpathCapNhatCHT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[@class=\'btn bg-teal btn-block btn-lg waves-effect\'][contains(text(),\'Tìm kiếm\')]'</initValue>
+      <name>xpathTimKiem</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//i[@data-v-2f384af6=\'\' and @class=\'material-icons\' and text()=\'visibility\']'</initValue>
+      <name>listWebElement</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//th[text()=\'Mã giao dịch\']/following-sibling::td'</initValue>
+      <name>xpathMaGD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Update thất bại\')]'</initValue>
+      <name>xpathBtnUpdateFail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Update thành công\')]'</initValue>
+      <name>xpathBtnUpdateSuccess</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Kiểm tra trạng thái\')]'</initValue>
+      <name>xpathBtnKiemTraStt</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Thử lại GD (mã cũ)\')]'</initValue>
+      <name>xpathBtnRetry</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'CẬP NHẬT TRẠNG THÁI THÀNH CÔNG\')]'</initValue>
+      <name>xpathBtnThanhCongGDCha</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'CẬP NHẬT TRẠNG THÁI THẤT BẠI\')]'</initValue>
+      <name>xpathBtnThatBaiGDCha</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Đồng ý\')]'</initValue>
+      <name>xpathBtnDongY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//th[contains(text(),\'Trạng thái đối tác\')]/following-sibling::td'</initValue>
+      <name>xpathTrangThai</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
