@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng xác nhận cấu hình thay đổi VA</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>022fc1d4-e4b8-4098-af06-4879a5d13abf</testCaseGuid>
-</TestCaseEntity>

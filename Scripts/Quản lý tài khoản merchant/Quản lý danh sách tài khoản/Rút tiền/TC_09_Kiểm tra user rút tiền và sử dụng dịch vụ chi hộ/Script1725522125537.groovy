@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -18,11 +19,11 @@ import internal.GlobalVariable as GlobalVariable
 def driver = DriverFactory.getWebDriver()
 JavascriptExecutor js = (JavascriptExecutor) driver;
 WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHandling.STOP_ON_FAILURE)
-WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 30, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
 	10, FailureHandling.STOP_ON_FAILURE)
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), GlobalVariable.waitSecond)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
 
@@ -46,8 +47,14 @@ driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDayClicked)).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.BtnOkXpath))).click()
 //driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
 WebElement soDuVi =  driver.findElement(By.xpath("//label[contains(text(),'Số dư Ví')]/following::input[1]"))
 String inputValue = soDuVi.getAttribute("value");

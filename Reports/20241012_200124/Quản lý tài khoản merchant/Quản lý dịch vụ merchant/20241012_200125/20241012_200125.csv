@@ -1,0 +1,367 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quản lý dịch vụ merchant,Chrome 129.0.0.0,,,12-10-2024 20:01:31,12-10-2024 20:07:34,6m - 3.739s,ERROR
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_01_Kiểm tra chức năng search,Chrome 129.0.0.0,,,12-10-2024 20:01:31,12-10-2024 20:01:49,18.442s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:01:31,12-10-2024 20:01:37,6.450s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:37,12-10-2024 20:01:38,1.158s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:38,12-10-2024 20:01:45,6.449s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:45,12-10-2024 20:01:48,3.089s,PASSED
+"verifyElementPresent(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/headerMenu""), 3)",Chrome 129.0.0.0,,,12-10-2024 20:01:48,12-10-2024 20:01:49,1.233s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:01:49,12-10-2024 20:01:49,0.003s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_02_Kiểm tra chức năng search khi chọn dịch vụ là chi hộ,Chrome 129.0.0.0,,,12-10-2024 20:01:49,12-10-2024 20:02:08,19.026s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:01:49,12-10-2024 20:01:53,3.516s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:53,12-10-2024 20:01:54,0.990s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:54,12-10-2024 20:01:57,3.574s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:01:57,12-10-2024 20:02:00,3.032s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:02:00,12-10-2024 20:02:00,0.001s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:02:00,12-10-2024 20:02:03,2.946s,PASSED
+"xpath(""//option[@value='TRANSFER_BANK']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:03,12-10-2024 20:02:03,0.249s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:02:03,12-10-2024 20:02:04,0.271s,PASSED
+"xpath = ""//label[contains(@for, 'transfer_provider_EPAY')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:04,12-10-2024 20:02:04,0.001s,PASSED
+elements = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:04,12-10-2024 20:02:04,0.000s,PASSED
+elements = driver.findElements(By.xpath(xpath)),Chrome 129.0.0.0,,,12-10-2024 20:02:04,12-10-2024 20:02:08,4.369s,PASSED
+"println(""Số lượng phần tử: "" + elements.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:08,0.002s,PASSED
+expectedElements = 25,Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:08,0.000s,PASSED
+if (elements.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:08,0.003s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:08,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_03_Kiểm tra chức năng search khi chọn dịch vụ là chi hộ và Active,Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:23,14.396s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:08,12-10-2024 20:02:11,2.889s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:11,12-10-2024 20:02:12,1.103s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:12,12-10-2024 20:02:16,3.408s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:16,12-10-2024 20:02:19,3.039s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:02:19,12-10-2024 20:02:19,0.001s,PASSED
+"dropdownService = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:02:19,12-10-2024 20:02:20,1.198s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:02:20,12-10-2024 20:02:20,0.236s,PASSED
+"xpath(""//option[@value='TRANSFER_BANK']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:20,12-10-2024 20:02:20,0.272s,PASSED
+"xpath(""//option[@value=""1""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:20,12-10-2024 20:02:21,0.246s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:21,0.479s,PASSED
+"xpathPayOn = ""//label[contains(@for, 'transfer_provider_EPAY')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:21,0.000s,PASSED
+"xpathSttActive = ""//td//span[contains(text(),'Đang hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:21,0.001s,PASSED
+PayOns = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:21,0.001s,PASSED
+SttActives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:21,0.000s,PASSED
+PayOns = driver.findElements(By.xpath(xpathPayOn)),Chrome 129.0.0.0,,,12-10-2024 20:02:21,12-10-2024 20:02:22,1.252s,PASSED
+SttActives = driver.findElements(By.xpath(xpathSttActive)),Chrome 129.0.0.0,,,12-10-2024 20:02:22,12-10-2024 20:02:23,0.221s,PASSED
+"println(""Số lượng phần tử chi hộ: "" + PayOns.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:23,0.002s,PASSED
+"println(""Số lượng phần tử active là: "" + SttActives.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:23,0.001s,PASSED
+expectedElements = 25,Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:23,0.000s,PASSED
+if (PayOns.size() == expectedElements && SttActives.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:23,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:23,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_04_Kiểm tra chức năng search khi chọn dịch vụ là chi hộ và Inactive,Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:34,11.834s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:23,12-10-2024 20:02:25,2.859s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:25,12-10-2024 20:02:27,1.087s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:27,12-10-2024 20:02:28,1.542s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:28,12-10-2024 20:02:31,3.066s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:02:31,12-10-2024 20:02:31,0.001s,PASSED
+"dropdownService = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:02:31,12-10-2024 20:02:32,1.158s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:02:32,12-10-2024 20:02:33,0.233s,PASSED
+"xpath(""//option[@value='TRANSFER_BANK']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.266s,PASSED
+"xpath(""//option[@value=""0""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.252s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.457s,PASSED
+"xpathPayOn = ""//label[contains(@for, 'transfer_provider_EPAY')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.001s,PASSED
+"xpathSttInactive = ""//td//span[contains(text(),'Không hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.000s,PASSED
+PayOns = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.000s,PASSED
+SttInactives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:33,0.000s,PASSED
+PayOns = driver.findElements(By.xpath(xpathPayOn)),Chrome 129.0.0.0,,,12-10-2024 20:02:33,12-10-2024 20:02:34,0.625s,PASSED
+SttInactives = driver.findElements(By.xpath(xpathSttInactive)),Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.227s,PASSED
+"println(""Số lượng phần tử chi hộ: "" + PayOns.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.001s,PASSED
+"println(""Số lượng phần tử active là: "" + SttInactives.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.000s,PASSED
+expectedElements = 0,Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.001s,PASSED
+if (PayOns.size() == expectedElements && SttInactives.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:34,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_05_kiểm tra chức năng search khi chọn dịch vụ là thu hộ IB,Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:49,14.202s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:34,12-10-2024 20:02:37,2.920s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:37,12-10-2024 20:02:38,1.102s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:38,12-10-2024 20:02:40,1.588s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:40,12-10-2024 20:02:43,3.049s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:02:43,12-10-2024 20:02:43,0.001s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:02:43,12-10-2024 20:02:45,2.374s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_IB']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:45,12-10-2024 20:02:46,0.264s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:02:46,12-10-2024 20:02:46,0.265s,PASSED
+"xpath = ""//th/span[@class='font-bold col-teal']/i[@class='material-icons' and text()='check_circle']""",Chrome 129.0.0.0,,,12-10-2024 20:02:46,12-10-2024 20:02:46,0.002s,PASSED
+elements = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:46,12-10-2024 20:02:46,0.000s,PASSED
+elements = driver.findElements(By.xpath(xpath)),Chrome 129.0.0.0,,,12-10-2024 20:02:46,12-10-2024 20:02:49,2.590s,PASSED
+"println(""Số lượng phần tử: "" + elements.size())",Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:02:49,0.002s,PASSED
+expectedElements = 24,Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:02:49,0.001s,PASSED
+if (elements.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:02:49,0.002s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:02:49,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_06_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ IB và active,Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:03:01,12.342s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:02:49,12-10-2024 20:02:51,2.845s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:51,12-10-2024 20:02:52,1.041s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:52,12-10-2024 20:02:54,1.409s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:02:54,12-10-2024 20:02:57,3.049s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:02:57,12-10-2024 20:02:57,0.000s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:02:57,12-10-2024 20:02:58,1.151s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_IB']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:58,12-10-2024 20:02:58,0.262s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:02:58,12-10-2024 20:02:59,0.223s,PASSED
+"xpath(""//option[@value=""1""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.256s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.481s,PASSED
+"xpathCollectionIB = ""//th/span[@class='font-bold col-teal']/i[@class='material-icons' and text()='check_circle']""",Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.001s,PASSED
+"xpathSttActive = ""//td//span[contains(text(),'Đang hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.004s,PASSED
+CollectionIBs = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.001s,PASSED
+SttActives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:02:59,0.000s,PASSED
+CollectionIBs = driver.findElements(By.xpath(xpathCollectionIB)),Chrome 129.0.0.0,,,12-10-2024 20:02:59,12-10-2024 20:03:01,1.344s,PASSED
+SttActives = driver.findElements(By.xpath(xpathSttActive)),Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:01,0.225s,PASSED
+expectedElements = 25,Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:01,0.001s,PASSED
+if (SttActives.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:01,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:01,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_07_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ IB và inactive,Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:20,18.807s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:01,12-10-2024 20:03:04,3.310s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:04,12-10-2024 20:03:05,0.922s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:05,12-10-2024 20:03:13,7.950s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:13,12-10-2024 20:03:16,3.049s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:03:16,12-10-2024 20:03:16,0.001s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:03:16,12-10-2024 20:03:17,1.289s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:03:17,12-10-2024 20:03:18,0.227s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_IB']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:03:18,12-10-2024 20:03:18,0.260s,PASSED
+"xpath(""//option[@value=""0""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:03:18,12-10-2024 20:03:18,0.245s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:03:18,12-10-2024 20:03:19,0.483s,PASSED
+"xpathCollectionIB = ""//th/span[@class='font-bold col-teal']/i[@class='material-icons' and text()='check_circle']""",Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:19,0.000s,PASSED
+"xpathSttInactive = ""//td//span[contains(text(),'Không hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:19,0.006s,PASSED
+CollectionIBs = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:19,0.001s,PASSED
+SttInactives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:19,0.000s,PASSED
+CollectionIBs = driver.findElements(By.xpath(xpathCollectionIB)),Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:19,0.737s,PASSED
+SttInactives = driver.findElements(By.xpath(xpathSttInactive)),Chrome 129.0.0.0,,,12-10-2024 20:03:19,12-10-2024 20:03:20,0.234s,PASSED
+for (org.openqa.selenium.WebElement element : SttInactives),Chrome 129.0.0.0,,,12-10-2024 20:03:20,12-10-2024 20:03:20,0.038s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:20,12-10-2024 20:03:20,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_08_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ Va,Chrome 129.0.0.0,,,12-10-2024 20:03:20,12-10-2024 20:03:33,13.114s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:20,12-10-2024 20:03:22,2.760s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:23,12-10-2024 20:03:24,1.036s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:24,12-10-2024 20:03:27,3.270s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:27,12-10-2024 20:03:30,3.065s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:03:30,12-10-2024 20:03:30,0.000s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:03:30,12-10-2024 20:03:31,1.163s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_VA']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:03:31,12-10-2024 20:03:31,0.260s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:03:31,12-10-2024 20:03:32,0.261s,PASSED
+"xpath = ""//label[contains(@for, 'bank_va_TECHCOMBANK')]""",Chrome 129.0.0.0,,,12-10-2024 20:03:32,12-10-2024 20:03:32,0.000s,PASSED
+elements = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:03:32,12-10-2024 20:03:32,0.001s,PASSED
+elements = driver.findElements(By.xpath(xpath)),Chrome 129.0.0.0,,,12-10-2024 20:03:32,12-10-2024 20:03:33,1.243s,PASSED
+"println(""Số lượng phần tử: "" + elements.size())",Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:33,0.001s,PASSED
+expectedElements = 24,Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:33,0.000s,PASSED
+if (elements.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:33,0.002s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:33,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_09_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ Va và active,Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:48,14.722s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:33,12-10-2024 20:03:35,2.469s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:35,12-10-2024 20:03:36,1.016s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:36,12-10-2024 20:03:40,3.391s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:40,12-10-2024 20:03:43,3.444s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:03:43,12-10-2024 20:03:43,0.001s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:03:43,12-10-2024 20:03:44,1.134s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:03:44,12-10-2024 20:03:45,0.226s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_VA']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:03:45,12-10-2024 20:03:45,0.287s,PASSED
+"xpath(""//option[@value=""1""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:03:45,12-10-2024 20:03:45,0.249s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:03:45,12-10-2024 20:03:46,0.472s,PASSED
+"xpath = ""//label[contains(@for, 'bank_va_TECHCOMBANK')]""",Chrome 129.0.0.0,,,12-10-2024 20:03:46,12-10-2024 20:03:46,0.001s,PASSED
+"xpathSttActive = ""//td//span[contains(text(),'Đang hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:03:46,12-10-2024 20:03:46,0.000s,PASSED
+elements = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:03:46,12-10-2024 20:03:46,0.001s,PASSED
+SttActives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:03:46,12-10-2024 20:03:46,0.001s,PASSED
+elements = driver.findElements(By.xpath(xpath)),Chrome 129.0.0.0,,,12-10-2024 20:03:46,12-10-2024 20:03:47,1.745s,PASSED
+SttActives = driver.findElements(By.xpath(xpathSttActive)),Chrome 129.0.0.0,,,12-10-2024 20:03:47,12-10-2024 20:03:48,0.226s,PASSED
+"println(""Số lượng phần tử: "" + elements.size())",Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:48,0.001s,PASSED
+expectedElements = 25,Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:48,0.001s,PASSED
+if (elements.size() == expectedElements && SttActives.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:48,0.000s,PASSED
+else,Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:48,0.004s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:48,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_10_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ VA và inactive,Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:04:13,25.790s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:03:48,12-10-2024 20:03:50,2.744s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:50,12-10-2024 20:03:51,1.009s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:03:51,12-10-2024 20:04:00,9.052s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:00,12-10-2024 20:04:10,9.424s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:04:10,12-10-2024 20:04:10,0.000s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:04:10,12-10-2024 20:04:11,1.293s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:04:11,12-10-2024 20:04:11,0.235s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_VA']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:04:11,12-10-2024 20:04:12,0.267s,PASSED
+"xpath(""//option[@value=""0""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.256s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.488s,PASSED
+"xpath = ""//label[contains(@for, 'bank_va_TECHCOMBANK')]""",Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.000s,PASSED
+"xpathSttInactive = ""//td//span[contains(text(),'Không hoạt động')]""",Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.000s,PASSED
+elements = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.001s,PASSED
+SttInactives = new java.util.ArrayList(),Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:12,0.000s,PASSED
+elements = driver.findElements(By.xpath(xpath)),Chrome 129.0.0.0,,,12-10-2024 20:04:12,12-10-2024 20:04:13,0.743s,PASSED
+SttInactives = driver.findElements(By.xpath(xpathSttInactive)),Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.233s,PASSED
+"println(""Số lượng phần tử: "" + elements.size())",Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.001s,PASSED
+expectedElements = 0,Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.000s,PASSED
+if (elements.size() == expectedElements && SttInactives.size() == expectedElements),Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.001s,PASSED
+else,Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.002s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:13,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_11_Kiểm tra chức năng search khi chọn tên merchant đúng,Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:24,10.960s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:13,12-10-2024 20:04:16,2.928s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:16,12-10-2024 20:04:17,1.097s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:17,12-10-2024 20:04:19,1.487s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:19,12-10-2024 20:04:22,3.059s,PASSED
+"sendKeys(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/accountName""), ""dannt11"")",Chrome 129.0.0.0,,,12-10-2024 20:04:22,12-10-2024 20:04:23,1.360s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:04:23,12-10-2024 20:04:24,0.269s,PASSED
+"verifyElementPresent(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/accountNameWhenSearch""), 2)",Chrome 129.0.0.0,,,12-10-2024 20:04:24,12-10-2024 20:04:24,0.735s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:24,12-10-2024 20:04:24,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_12_Kiểm tra chức năng search khi nhập tên merchant không đúng,Chrome 129.0.0.0,,,12-10-2024 20:04:24,12-10-2024 20:04:37,12.490s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:24,12-10-2024 20:04:27,2.833s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:27,12-10-2024 20:04:28,1.070s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:28,12-10-2024 20:04:32,3.346s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:32,12-10-2024 20:04:35,3.048s,PASSED
+"sendKeys(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/accountName""), ""dannt11222"")",Chrome 129.0.0.0,,,12-10-2024 20:04:35,12-10-2024 20:04:36,1.265s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/searchBtn""))",Chrome 129.0.0.0,,,12-10-2024 20:04:36,12-10-2024 20:04:36,0.259s,PASSED
+"textSearchIncorect = getText(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/textSearchIncorect""))",Chrome 129.0.0.0,,,12-10-2024 20:04:36,12-10-2024 20:04:37,0.643s,PASSED
+"verifyEqual(textSearchIncorect, ""Không tìm thấy dữ liệu."")",Chrome 129.0.0.0,,,12-10-2024 20:04:37,12-10-2024 20:04:37,0.005s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:37,12-10-2024 20:04:37,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_13_Kiểm tra chức năng xác nhận cấu hình thay đổi VA,Chrome 129.0.0.0,,,12-10-2024 20:04:37,12-10-2024 20:04:56,19.657s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:37,12-10-2024 20:04:40,2.847s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:40,12-10-2024 20:04:41,0.991s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:41,12-10-2024 20:04:44,3.586s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:04:44,12-10-2024 20:04:47,3.035s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/iconTime""))",Chrome 129.0.0.0,,,12-10-2024 20:04:47,12-10-2024 20:04:49,1.300s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:04:49,12-10-2024 20:04:49,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 10)",Chrome 129.0.0.0,,,12-10-2024 20:04:49,12-10-2024 20:04:49,0.001s,PASSED
+iconClick = driver.findElement(By.xpath(xpathDropdownSwitchFrom)),Chrome 129.0.0.0,,,12-10-2024 20:04:49,12-10-2024 20:04:49,0.636s,PASSED
+iconClick.click(),Chrome 129.0.0.0,,,12-10-2024 20:04:49,12-10-2024 20:04:49,0.050s,PASSED
+techcombankOtp = driver.findElement(By.xpath(xpathOptionTCB)),Chrome 129.0.0.0,,,12-10-2024 20:04:49,12-10-2024 20:04:50,0.219s,PASSED
+textTech = techcombankOtp.getText(),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.008s,PASSED
+"println(""Đoạn văn: "" + textTech)",Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.000s,PASSED
+techcombankOtp.click(),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.025s,PASSED
+"matcher = textTech =~ ""\bTECHCOMBANK\b""",Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.001s,PASSED
+techcombank = (matcher.find()) ? matcher.group() : ,Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.004s,PASSED
+iconClick2 = driver.findElement(By.xpath(xpathDropdownSwitchTo)),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.435s,PASSED
+iconClick2.click(),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.030s,PASSED
+element2 = driver.findElement(By.xpath(xpathOptionVPTo)),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.218s,PASSED
+element2.click(),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:50,0.022s,PASSED
+xpath(xpathDatePicker)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:50,12-10-2024 20:04:51,0.471s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:51,12-10-2024 20:04:51,0.465s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:51,12-10-2024 20:04:52,0.459s,PASSED
+now = new java.util.Date(),Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.003s,PASSED
+sdf1 = new java.text.SimpleDateFormat(mm),Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.006s,PASSED
+formattedDate1 = sdf1.format(now),Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.000s,PASSED
+currentMinute1 = Integer.parseInt(formattedDate1) + 1,Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.003s,PASSED
+"dateXpath1 = ""m-"" + currentMinute1",Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.000s,PASSED
+"clock3 = ""//div[@class='dtp']/descendant::*[name()='circle' and @id='"" + dateXpath1 + ""']""",Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.000s,PASSED
+"println(""element: "" + clock3)",Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.000s,PASSED
+clock4 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clock3))),Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.450s,PASSED
+"script1 = ""var event = new MouseEvent('click', {"" + ""view: window,"" + ""bubbles: true,"" + ""cancelable: true"" + ""});"" + ""arguments[0].dispatchEvent(event);""",Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.001s,PASSED
+"driver.executeScript(script1, clock4)",Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:52,0.009s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:52,12-10-2024 20:04:53,0.454s,PASSED
+xpath(xpathDatePickerEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:53,12-10-2024 20:04:53,0.241s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:53,12-10-2024 20:04:53,0.458s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:53,12-10-2024 20:04:54,0.455s,PASSED
+sdf = new java.text.SimpleDateFormat(mm),Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.001s,PASSED
+formattedDate = sdf.format(now),Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.000s,PASSED
+currentMinute = Integer.parseInt(formattedDate) + 2,Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.001s,PASSED
+"dateXpath = ""m-"" + currentMinute",Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.000s,PASSED
+"clock2 = ""//div[@class='dtp']/descendant::*[name()='circle' and @id='"" + dateXpath + ""']""",Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.001s,PASSED
+clock1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clock2))),Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.452s,PASSED
+"script = ""var event = new MouseEvent('click', {"" + ""view: window,"" + ""bubbles: true,"" + ""cancelable: true"" + ""});"" + ""arguments[0].dispatchEvent(event);""",Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.000s,PASSED
+"driver.executeScript(script, clock1)",Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:54,0.009s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:54,12-10-2024 20:04:55,0.454s,PASSED
+xpath(xpathOptionBack)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:55,12-10-2024 20:04:55,0.255s,PASSED
+xpath(xpathOptionTCBBack)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:55,12-10-2024 20:04:55,0.261s,PASSED
+xpath(xpathUpdateBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 20:04:55,12-10-2024 20:04:56,0.470s,PASSED
+"xpath(""//button[normalize-space()='Ok']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:04:56,12-10-2024 20:04:56,0.768s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:56,12-10-2024 20:04:56,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_14_Kiểm tra thay đổi sau khi cấu hình VA trên MCV,Chrome 129.0.0.0,,,12-10-2024 20:04:56,12-10-2024 20:05:00,3.805s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:04:56,12-10-2024 20:04:59,2.856s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:04:59,12-10-2024 20:04:59,0.000s,PASSED
+"xpath(""//input[@placeholder='Tài khoản']"")).sendKeys(""dannt11"")",Chrome 129.0.0.0,,,12-10-2024 20:04:59,12-10-2024 20:05:00,0.421s,PASSED
+"xpath(""//input[@placeholder='Mật khẩu']"")).sendKeys(""9Pay@1234"")",Chrome 129.0.0.0,,,12-10-2024 20:05:00,12-10-2024 20:05:00,0.250s,PASSED
+"xpath(""//button[contains(text(),'Đăng nhập')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:05:00,12-10-2024 20:05:00,0.235s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:00,12-10-2024 20:05:00,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_15_Kiểm tra khi button lịch sử cấu hình VA,Chrome 129.0.0.0,,,12-10-2024 20:05:00,12-10-2024 20:05:39,39.149s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:00,12-10-2024 20:05:03,2.828s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:03,12-10-2024 20:05:04,1.031s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:04,12-10-2024 20:05:18,14.264s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:18,12-10-2024 20:05:35,16.167s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:05:35,12-10-2024 20:05:35,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20)",Chrome 129.0.0.0,,,12-10-2024 20:05:35,12-10-2024 20:05:35,0.000s,PASSED
+"xpath(""//button[contains(text(),'Lịch sử cấu hình VA')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:05:35,12-10-2024 20:05:37,2.847s,PASSED
+"Assert.assertEquals(xpath(""//h4[contains(text(),'Lịch sử cấu hình chuyển mạch VA')]"")).getText(), ""Lịch sử cấu hình chuyển mạch VA"")",Chrome 129.0.0.0,,,12-10-2024 20:05:37,12-10-2024 20:05:39,1.985s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:39,12-10-2024 20:05:39,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_16_Kiểm tra khi click vào button Sửa sau mỗi bản ghi,Chrome 129.0.0.0,,,12-10-2024 20:05:39,12-10-2024 20:05:54,14.944s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:39,12-10-2024 20:05:42,2.666s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:42,12-10-2024 20:05:43,1.052s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:43,12-10-2024 20:05:45,1.576s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:05:45,12-10-2024 20:05:45,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20)",Chrome 129.0.0.0,,,12-10-2024 20:05:45,12-10-2024 20:05:45,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:45,12-10-2024 20:05:48,3.068s,PASSED
+"elements = driver.findElements(By.xpath(""//a[contains(.,'edit')]""))",Chrome 129.0.0.0,,,12-10-2024 20:05:48,12-10-2024 20:05:49,1.153s,PASSED
+random = new java.util.Random(),Chrome 129.0.0.0,,,12-10-2024 20:05:49,12-10-2024 20:05:49,0.004s,PASSED
+randomElement = elements.get(random.nextInt(elements.size())),Chrome 129.0.0.0,,,12-10-2024 20:05:49,12-10-2024 20:05:49,0.002s,PASSED
+randomElement.click(),Chrome 129.0.0.0,,,12-10-2024 20:05:49,12-10-2024 20:05:49,0.165s,PASSED
+"title = xpath(""//h2[contains(text(),'THÔNG TIN TÀI KHOẢN')]"")).getText()",Chrome 129.0.0.0,,,12-10-2024 20:05:49,12-10-2024 20:05:54,5.225s,PASSED
+"Assert.assertEquals(title, ""THÔNG TIN TÀI KHOẢN"")",Chrome 129.0.0.0,,,12-10-2024 20:05:54,12-10-2024 20:05:54,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:54,12-10-2024 20:05:54,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_17_Kiểm tra khi nhấn resetBtn,Chrome 129.0.0.0,,,12-10-2024 20:05:54,12-10-2024 20:06:23,28.353s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:05:54,12-10-2024 20:05:58,3.963s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:58,12-10-2024 20:05:59,1.086s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:05:59,12-10-2024 20:06:16,16.433s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:16,12-10-2024 20:06:19,3.036s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:06:19,12-10-2024 20:06:19,0.001s,PASSED
+"dropdown = driver.findElement(By.name(""service_type""))",Chrome 129.0.0.0,,,12-10-2024 20:06:19,12-10-2024 20:06:20,1.226s,PASSED
+"usenameInputField = driver.findElement(By.xpath(""//input[@placeholder='Nhập tên tài khoản']""))",Chrome 129.0.0.0,,,12-10-2024 20:06:20,12-10-2024 20:06:20,0.231s,PASSED
+"xpath(""//option[@value='DEPOSIT_TRANSFER_IB']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:06:20,12-10-2024 20:06:21,0.258s,PASSED
+"dropdownStt = driver.findElement(By.name(""is_active""))",Chrome 129.0.0.0,,,12-10-2024 20:06:21,12-10-2024 20:06:21,0.224s,PASSED
+"xpath(""//option[@value=""1""]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:06:21,12-10-2024 20:06:21,0.257s,PASSED
+"sendKeys(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/accountName""), ""dannt11"")",Chrome 129.0.0.0,,,12-10-2024 20:06:21,12-10-2024 20:06:22,0.533s,PASSED
+"valueUsername = usenameInputField.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.006s,PASSED
+"println(""Giá trị đã nhập trước là: "" + valueUsername)",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.000s,PASSED
+"resetBtn = driver.findElement(By.xpath(""//button[contains(text(),'Reset bộ lọc')]""))",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.227s,PASSED
+resetBtn.click(),Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.155s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20)",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.000s,PASSED
+"inputElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(""//input[@placeholder='Nhập tên tài khoản']"")))",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:22,0.228s,PASSED
+"usenameInputFieldg = driver.findElement(By.xpath(""//input[@placeholder='Nhập tên tài khoản']""))",Chrome 129.0.0.0,,,12-10-2024 20:06:22,12-10-2024 20:06:23,0.442s,PASSED
+"valueUsernameAf = usenameInputFieldg.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:23,0.010s,PASSED
+"println(""Giá trị đã nhập là: "" + valueUsernameAf)",Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:23,0.000s,PASSED
+if (valueUsernameAf != valueUsername),Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:23,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:23,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_18_Kiểm tra khả năng mở form quản lý dịch vụ merchant,Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:32,9.494s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:06:23,12-10-2024 20:06:26,3.114s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:26,12-10-2024 20:06:27,1.094s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 20, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:27,12-10-2024 20:06:28,1.054s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:28,12-10-2024 20:06:31,3.058s,PASSED
+"verifyElementPresent(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/headerMenu""), 3)",Chrome 129.0.0.0,,,12-10-2024 20:06:31,12-10-2024 20:06:32,1.154s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:06:32,12-10-2024 20:06:32,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_19_Kiểm tra tài khoản đã active dịch vụ chi,Chrome 129.0.0.0,,,12-10-2024 20:06:32,12-10-2024 20:07:19,47.217s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:06:32,12-10-2024 20:06:35,2.759s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:35,12-10-2024 20:06:40,5.429s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:40,12-10-2024 20:06:44,3.976s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:06:44,12-10-2024 20:06:44,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20)",Chrome 129.0.0.0,,,12-10-2024 20:06:44,12-10-2024 20:06:44,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:06:44,12-10-2024 20:07:01,16.164s,PASSED
+"elements = driver.findElements(By.xpath(""//tbody//td[@class='text-center'][2]""))",Chrome 129.0.0.0,,,12-10-2024 20:07:01,12-10-2024 20:07:05,4.816s,PASSED
+random = new java.util.Random(),Chrome 129.0.0.0,,,12-10-2024 20:07:05,12-10-2024 20:07:05,0.001s,PASSED
+randomElement = elements.get(random.nextInt(elements.size())),Chrome 129.0.0.0,,,12-10-2024 20:07:05,12-10-2024 20:07:05,0.000s,PASSED
+element1 = randomElement.getText(),Chrome 129.0.0.0,,,12-10-2024 20:07:05,12-10-2024 20:07:05,0.014s,PASSED
+"println(""tên merchant: "" + element1)",Chrome 129.0.0.0,,,12-10-2024 20:07:05,12-10-2024 20:07:05,0.000s,PASSED
+"xpath(""//input[@placeholder='Nhập tên tài khoản']"")).sendKeys(element1)",Chrome 129.0.0.0,,,12-10-2024 20:07:05,12-10-2024 20:07:08,2.122s,PASSED
+"xpath(""//button[contains(text(),'Tìm kiếm')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:07:08,12-10-2024 20:07:09,1.907s,PASSED
+"xpath(""//a[contains(text(),'Quản lý phí dịch vụ merchant')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:07:09,12-10-2024 20:07:11,1.999s,PASSED
+"xpath(""//span[@class='filter-option pull-left']"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:07:11,12-10-2024 20:07:15,4.056s,PASSED
+"xpath(""//input[@class='form-control']"")).sendKeys(element1)",Chrome 129.0.0.0,,,12-10-2024 20:07:15,12-10-2024 20:07:18,2.204s,PASSED
+"xpath(""//ul[@role='menu']//li[@class='active']//a"")).click()",Chrome 129.0.0.0,,,12-10-2024 20:07:18,12-10-2024 20:07:19,1.736s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:07:19,12-10-2024 20:07:19,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_20_Kiểm tra tài khoản đã active dịch vụ thu hộ IB,Chrome 129.0.0.0,,,12-10-2024 20:07:19,12-10-2024 20:07:34,14.895s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 20:07:19,12-10-2024 20:07:22,2.679s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:07:22,12-10-2024 20:07:23,1.072s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:07:23,12-10-2024 20:07:29,6.202s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 20:07:29,12-10-2024 20:07:29,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 20)",Chrome 129.0.0.0,,,12-10-2024 20:07:29,12-10-2024 20:07:29,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 20:07:29,12-10-2024 20:07:32,3.023s,PASSED
+"elements = driver.findElements(By.xpath(""//label[contains(.,'Nhà cung cấp EPAY')]""))",Chrome 129.0.0.0,,,12-10-2024 20:07:32,12-10-2024 20:07:34,1.210s,PASSED
+random = new java.util.Random(),Chrome 129.0.0.0,,,12-10-2024 20:07:34,12-10-2024 20:07:34,0.000s,PASSED
+randomElement = elements.get(random.nextInt(elements.size())),Chrome 129.0.0.0,,,12-10-2024 20:07:34,12-10-2024 20:07:34,0.001s,PASSED
+randomElement.click(),Chrome 129.0.0.0,,,12-10-2024 20:07:34,12-10-2024 20:07:34,0.050s,PASSED
+"Assert.assertEquals(xpath(""//h4[contains(text(),'Xác nhận thay đổi nhà cung cấp chi hộ mặc định')]"")).getText(), ""Xác nhận thay đổi nhà cung cấp chi hộ mặc định"")",Chrome 129.0.0.0,,,12-10-2024 20:07:34,12-10-2024 20:07:34,0.632s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 20:07:34,12-10-2024 20:07:34,0.000s,PASSED

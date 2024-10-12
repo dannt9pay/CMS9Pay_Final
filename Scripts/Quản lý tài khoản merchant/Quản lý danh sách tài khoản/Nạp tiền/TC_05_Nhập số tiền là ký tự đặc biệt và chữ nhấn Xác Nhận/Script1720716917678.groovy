@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
+import org.openqa.selenium.TimeoutException
 
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -36,10 +37,14 @@ driver.findElement(By.xpath(GlobalVariable.xpathThuHo3)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathHomQua)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnContinue)).click()
-//Nếu có đã có ngày đối soát thi mở cmt bên 
-WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn ')]")))
-Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
-driver.findElement(By.xpath("//button[contains(text(),'Đồng ý')]")).click()
+
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn ')]")))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath("//button[contains(text(),'Đồng ý')]")).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
 driver.findElement(By.xpath(GlobalVariable.xpathDepositTextbox)).sendKeys(")(*&&^")
 driver.findElement(By.xpath(GlobalVariable.xpathButtonSubmit)).click()

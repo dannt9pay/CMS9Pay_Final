@@ -1,0 +1,64 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quản lý dịch vụ merchant,Chrome 129.0.0.0,,,12-10-2024 21:19:47,12-10-2024 21:21:07,1m - 19.952s,ERROR
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_13_Kiểm tra chức năng xác nhận cấu hình thay đổi VA,Chrome 129.0.0.0,,,12-10-2024 21:19:47,12-10-2024 21:20:57,1m - 9.531s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 21:19:47,12-10-2024 21:19:52,4.379s,PASSED
+waitTime = Integer.parseInt(waitSecond),Chrome 129.0.0.0,,,12-10-2024 21:19:52,12-10-2024 21:19:52,0.197s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 21:19:52,12-10-2024 21:19:53,1.017s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), waitTime, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 21:19:53,12-10-2024 21:20:15,21.351s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 21:20:15,12-10-2024 21:20:18,3.136s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/iconTime""))",Chrome 129.0.0.0,,,12-10-2024 21:20:18,12-10-2024 21:20:19,1.406s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 21:20:19,12-10-2024 21:20:19,0.001s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 10)",Chrome 129.0.0.0,,,12-10-2024 21:20:19,12-10-2024 21:20:19,0.001s,PASSED
+iconClick = driver.findElement(By.xpath(xpathDropdownSwitchFrom)),Chrome 129.0.0.0,,,12-10-2024 21:20:19,12-10-2024 21:20:20,0.636s,PASSED
+iconClick.click(),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.034s,PASSED
+techcombankOtp = driver.findElement(By.xpath(xpathOptionTCB)),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.229s,PASSED
+textTech = techcombankOtp.getText(),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.015s,PASSED
+"println(""Đoạn văn: "" + textTech)",Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.003s,PASSED
+techcombankOtp.click(),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.034s,PASSED
+"matcher = textTech =~ ""\bTECHCOMBANK\b""",Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.001s,PASSED
+techcombank = (matcher.find()) ? matcher.group() : ,Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.006s,PASSED
+iconClick2 = driver.findElement(By.xpath(xpathDropdownSwitchTo)),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.438s,PASSED
+iconClick2.click(),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:20,0.029s,PASSED
+element2 = driver.findElement(By.xpath(xpathOptionVPTo)),Chrome 129.0.0.0,,,12-10-2024 21:20:20,12-10-2024 21:20:21,0.230s,PASSED
+element2.click(),Chrome 129.0.0.0,,,12-10-2024 21:20:21,12-10-2024 21:20:21,0.036s,PASSED
+xpath(xpathDatePicker)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:21,12-10-2024 21:20:21,0.490s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:21,12-10-2024 21:20:22,0.472s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.464s,PASSED
+now = new java.util.Date(),Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.005s,PASSED
+sdf1 = new java.text.SimpleDateFormat(mm),Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.004s,PASSED
+formattedDate1 = sdf1.format(now),Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.000s,PASSED
+currentMinute1 = Integer.parseInt(formattedDate1) + 1,Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.003s,PASSED
+"dateXpath1 = ""m-"" + currentMinute1",Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.001s,PASSED
+"clock3 = ""//div[@class='dtp']/descendant::*[name()='circle' and @id='"" + dateXpath1 + ""']""",Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.001s,PASSED
+"println(""element: "" + clock3)",Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:22,0.000s,PASSED
+clock4 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clock3))),Chrome 129.0.0.0,,,12-10-2024 21:20:22,12-10-2024 21:20:23,0.453s,PASSED
+"script1 = ""var event = new MouseEvent('click', {"" + ""view: window,"" + ""bubbles: true,"" + ""cancelable: true"" + ""});"" + ""arguments[0].dispatchEvent(event);""",Chrome 129.0.0.0,,,12-10-2024 21:20:23,12-10-2024 21:20:23,0.001s,PASSED
+"driver.executeScript(script1, clock4)",Chrome 129.0.0.0,,,12-10-2024 21:20:23,12-10-2024 21:20:23,0.010s,PASSED
+xpath(xpathOkBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:23,12-10-2024 21:20:23,0.457s,PASSED
+xpath(xpathDatePickerEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:23,12-10-2024 21:20:23,0.264s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:23,12-10-2024 21:20:24,0.465s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.461s,PASSED
+sdf = new java.text.SimpleDateFormat(mm),Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.001s,PASSED
+formattedDate = sdf.format(now),Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.002s,PASSED
+currentMinute = Integer.parseInt(formattedDate) + 2,Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.001s,PASSED
+"dateXpath = ""m-"" + currentMinute",Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.001s,PASSED
+"clock2 = ""//div[@class='dtp']/descendant::*[name()='circle' and @id='"" + dateXpath + ""']""",Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:24,0.001s,PASSED
+clock1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clock2))),Chrome 129.0.0.0,,,12-10-2024 21:20:24,12-10-2024 21:20:25,0.455s,PASSED
+"script = ""var event = new MouseEvent('click', {"" + ""view: window,"" + ""bubbles: true,"" + ""cancelable: true"" + ""});"" + ""arguments[0].dispatchEvent(event);""",Chrome 129.0.0.0,,,12-10-2024 21:20:25,12-10-2024 21:20:25,0.001s,PASSED
+"driver.executeScript(script, clock1)",Chrome 129.0.0.0,,,12-10-2024 21:20:25,12-10-2024 21:20:25,0.009s,PASSED
+xpath(xpathBtnOkEnd)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:25,12-10-2024 21:20:25,0.457s,PASSED
+xpath(xpathOptionBack)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:25,12-10-2024 21:20:26,0.269s,PASSED
+xpath(xpathOptionTCBBack)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:26,12-10-2024 21:20:26,0.271s,PASSED
+xpath(xpathUpdateBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 21:20:26,12-10-2024 21:20:26,0.469s,PASSED
+"xpath(""//button[normalize-space()='Ok']"")).click()",Chrome 129.0.0.0,,,12-10-2024 21:20:26,12-10-2024 21:20:27,0.670s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 21:20:27,12-10-2024 21:20:57,30.010s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_14_Kiểm tra thay đổi sau khi cấu hình VA trên MCV,Chrome 129.0.0.0,,,12-10-2024 21:20:57,12-10-2024 21:21:07,10.343s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 21:20:57,12-10-2024 21:21:06,9.323s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 21:21:06,12-10-2024 21:21:06,0.001s,PASSED
+"xpath(""//input[@placeholder='Tài khoản']"")).sendKeys(""dannt11"")",Chrome 129.0.0.0,,,12-10-2024 21:21:06,12-10-2024 21:21:07,0.439s,PASSED
+"xpath(""//input[@placeholder='Mật khẩu']"")).sendKeys(""9Pay@1234"")",Chrome 129.0.0.0,,,12-10-2024 21:21:07,12-10-2024 21:21:07,0.257s,PASSED
+"xpath(""//button[contains(text(),'Đăng nhập')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 21:21:07,12-10-2024 21:21:07,0.258s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 21:21:07,12-10-2024 21:21:07,0.005s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 21:21:07,12-10-2024 21:21:07,0.001s,PASSED

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "9A841911CF35EAE53D4C0EB60834A92F",
+  "keywordFileContentHash": "782D13A0694233249C48BB54BB38E157",
   "keywordClasses": [
     {
       "name": "statusTestcase",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

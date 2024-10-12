@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -46,15 +47,21 @@ System.out.println("Thu ho " + thuHo);
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathAccountName)).getText(), GlobalVariable.username)
 driver.findElement(By.xpath("//i[normalize-space()='money_off']")).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='filter-option pull-left'][normalize-space()='"+GlobalVariable.username+"']")))
-driver.findElement(By.xpath("//span[contains(text(),'Chọn ví rút')]")).click()
-driver.findElement(By.xpath("//span[contains(text(),'Thu hộ (VND)')]")).click()
-driver.findElement(By.xpath("//input[@placeholder='Chọn ngày']")).click()
-driver.findElement(By.xpath("//li[normalize-space()='Hôm nay']")).click()
+driver.findElement(By.xpath(GlobalVariable.xpathViRut)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
 
 driver.findElement(By.xpath("//div[@class='btn btn-lg btn-primary waves-effect']")).click()
-driver.findElement(By.xpath("//button[contains(text(),'Đồng ý')]")).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
-WebElement soDuKhaDung = driver.findElement(By.xpath("//label[contains(text(),'Số dư khả dụng')]//parent::div//following-sibling::div//input"))
+WebElement soDuKhaDung = driver.findElement(By.xpath(GlobalVariable.xpathSoDuKhaDung))
 String value = soDuKhaDung.getAttribute('value')
 
 int availableBalances = Integer.parseInt(value.replace(',', ''))
@@ -97,8 +104,7 @@ Thread.sleep(1000)
 driver.findElement(By.xpath("//button[contains(text(),'Đồng ý')]")).click()
 driver.findElement(By.xpath("//button[contains(text(),'Ok')]")).click()
 WebUI.callTestCase(findTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomeFuncRutTien'), [:], FailureHandling.STOP_ON_FAILURE)
-//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Quản lý tài khoản merchant')]"))).click()
-//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Quản lý danh sách tài khoản')]"))).click()
+
 driver.findElement(By.xpath("//span[contains(text(),'Tài khoản')]")).click()
 driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(GlobalVariable.username);
 driver.findElement(By.xpath(GlobalVariable.xpathOption)).click()

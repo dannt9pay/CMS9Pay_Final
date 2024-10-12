@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng search khi chọn tên merchant đúng</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>fe1e401d-1884-42c7-94f5-7a81f2296c3f</testCaseGuid>
-</TestCaseEntity>

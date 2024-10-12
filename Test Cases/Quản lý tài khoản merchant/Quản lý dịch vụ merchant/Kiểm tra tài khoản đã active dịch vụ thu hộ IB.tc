@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra tài khoản đã active dịch vụ thu hộ IB</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9e6cf186-77c8-4005-8c32-233a509343d6</testCaseGuid>
-</TestCaseEntity>

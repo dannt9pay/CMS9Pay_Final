@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra khi không nhập số tiền</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7f8bb021-d6cd-444e-a158-2461d32cdf6c</testCaseGuid>
-</TestCaseEntity>

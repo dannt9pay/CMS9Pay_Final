@@ -1,0 +1,373 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Rút tiền,Chrome 129.0.0.0,,,12-10-2024 23:31:12,12-10-2024 23:37:40,6m - 27.484s,ERROR
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_01_Kiểm tra mở form Rút tiền,Chrome 129.0.0.0,,,12-10-2024 23:31:12,12-10-2024 23:31:29,17.352s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:31:12,12-10-2024 23:31:16,3.525s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:31:16,12-10-2024 23:31:16,0.004s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:16,12-10-2024 23:31:17,1.383s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:17,12-10-2024 23:31:22,4.462s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:31:22,12-10-2024 23:31:22,0.266s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:22,12-10-2024 23:31:22,0.459s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:31:22,12-10-2024 23:31:22,0.006s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:31:22,12-10-2024 23:31:23,0.247s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:31:23,12-10-2024 23:31:23,0.041s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:31:23,12-10-2024 23:31:26,3.381s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:31:26,12-10-2024 23:31:26,0.013s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:31:26,12-10-2024 23:31:26,0.239s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:31:26,12-10-2024 23:31:26,0.106s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:31:26,12-10-2024 23:31:27,0.251s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:31:27,12-10-2024 23:31:27,0.170s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:27,12-10-2024 23:31:27,0.281s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:27,12-10-2024 23:31:28,0.486s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:31:28,12-10-2024 23:31:28,0.742s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:28,12-10-2024 23:31:29,0.423s,PASSED
+"Assert.assertEquals(xpath(xpathActiveItem)).getText(), ""RÚT TIỀN THÔNG THƯỜNG VÀ CHI NỘI ĐỊA"")",Chrome 129.0.0.0,,,12-10-2024 23:31:29,12-10-2024 23:31:29,0.756s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:31:29,12-10-2024 23:31:29,0.012s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_02_Kiểm tra validate trường thông tin,Chrome 129.0.0.0,,,12-10-2024 23:31:29,12-10-2024 23:31:47,17.950s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:31:30,12-10-2024 23:31:34,4.434s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:31:34,12-10-2024 23:31:34,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:34,12-10-2024 23:31:35,0.955s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:35,12-10-2024 23:31:39,3.749s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:31:39,12-10-2024 23:31:39,0.267s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:39,12-10-2024 23:31:39,0.459s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:31:39,12-10-2024 23:31:39,0.001s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:31:39,12-10-2024 23:31:40,0.242s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:31:40,12-10-2024 23:31:40,0.040s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:31:40,12-10-2024 23:31:43,3.255s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:31:43,12-10-2024 23:31:43,0.013s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:31:43,12-10-2024 23:31:43,0.236s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:31:43,12-10-2024 23:31:43,0.080s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:31:43,12-10-2024 23:31:44,0.275s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:31:44,12-10-2024 23:31:44,0.169s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:44,12-10-2024 23:31:44,0.270s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:44,12-10-2024 23:31:44,0.455s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:31:44,12-10-2024 23:31:45,0.757s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:45,12-10-2024 23:31:46,0.402s,PASSED
+xpath(xpathBtnContinue)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:46,12-10-2024 23:31:46,0.466s,PASSED
+"Assert.assertEquals(xpath(xpathErrorWallet)).getText(), ""Vui lòng chọn ví dịch vụ"")",Chrome 129.0.0.0,,,12-10-2024 23:31:46,12-10-2024 23:31:47,0.833s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:47,12-10-2024 23:31:47,0.247s,PASSED
+xpath(xpathParentThuHo)).click(),Chrome 129.0.0.0,,,12-10-2024 23:31:47,12-10-2024 23:31:47,0.240s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:31:47,12-10-2024 23:31:47,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_03_Kiểm tra khi nhập đầy đủ và nhấn tiếp tục,Chrome 129.0.0.0,,,12-10-2024 23:31:47,12-10-2024 23:32:18,30.445s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:31:47,12-10-2024 23:31:51,3.481s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:31:51,12-10-2024 23:31:51,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:51,12-10-2024 23:31:52,0.965s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:52,12-10-2024 23:31:55,3.438s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:31:55,12-10-2024 23:31:56,0.263s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:31:56,12-10-2024 23:31:56,0.457s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:31:56,12-10-2024 23:31:56,0.001s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:31:56,12-10-2024 23:31:56,0.238s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:31:56,12-10-2024 23:31:56,0.039s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:31:56,12-10-2024 23:32:00,3.295s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:00,0.012s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:00,0.257s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:00,0.071s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:00,0.286s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:00,0.160s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:00,12-10-2024 23:32:01,0.255s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:01,12-10-2024 23:32:01,0.475s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:32:01,12-10-2024 23:32:03,1.961s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:03,12-10-2024 23:32:04,0.533s,PASSED
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUser))),Chrome 129.0.0.0,,,12-10-2024 23:32:04,12-10-2024 23:32:16,12.450s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:16,12-10-2024 23:32:16,0.261s,PASSED
+xpath(xpathParentThuHo)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:16,12-10-2024 23:32:17,0.261s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:17,12-10-2024 23:32:17,0.493s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:17,12-10-2024 23:32:18,0.475s,PASSED
+xpath(xpathBtnContinue)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:18,12-10-2024 23:32:18,0.263s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:32:18,12-10-2024 23:32:18,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_04_Kiểm tra khi nhập số tiền lớn hơn số dư khả dụng,Chrome 129.0.0.0,,,12-10-2024 23:32:18,12-10-2024 23:33:07,49.279s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:32:18,12-10-2024 23:32:21,3.001s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:32:21,12-10-2024 23:32:21,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:32:21,12-10-2024 23:32:22,0.976s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:32:22,12-10-2024 23:32:30,8.276s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:32:30,12-10-2024 23:32:30,0.254s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:32:30,12-10-2024 23:32:31,0.462s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:32:31,12-10-2024 23:32:31,0.001s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:32:31,12-10-2024 23:32:31,0.238s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:32:31,12-10-2024 23:32:31,0.050s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:32:31,12-10-2024 23:32:35,3.861s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:32:35,12-10-2024 23:32:35,0.012s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:32:35,12-10-2024 23:32:35,0.236s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:32:35,12-10-2024 23:32:35,0.101s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:32:35,12-10-2024 23:32:36,0.256s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:32:36,12-10-2024 23:32:36,0.160s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:36,12-10-2024 23:32:36,0.262s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:36,12-10-2024 23:32:37,0.477s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:32:37,12-10-2024 23:32:37,0.741s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:37,12-10-2024 23:32:38,0.393s,PASSED
+"wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(""//span[@class='filter-option pull-left'][normalize-space()='"" + username + ""']"")))",Chrome 129.0.0.0,,,12-10-2024 23:32:38,12-10-2024 23:32:43,4.792s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:43,12-10-2024 23:32:43,0.260s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:43,12-10-2024 23:32:43,0.261s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:43,12-10-2024 23:32:44,0.500s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:44,12-10-2024 23:32:44,0.480s,PASSED
+xpath(xpathBtnContinue)).click(),Chrome 129.0.0.0,,,12-10-2024 23:32:44,12-10-2024 23:32:44,0.257s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:32:44,12-10-2024 23:33:05,20.684s,PASSED
+catch (org.openqa.selenium.TimeoutException e),Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.003s,PASSED
+soDuKhaDung = driver.findElement(By.xpath(xpathSoDuVi)),Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.223s,PASSED
+"value = soDuKhaDung.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.006s,PASSED
+"println("">>>: "" + value)",Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.000s,PASSED
+"availableBalances = Integer.parseInt(value.replace("","", """"))",Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.001s,PASSED
+"println(""so du kha dung la: "" + availableBalances)",Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.002s,PASSED
+amountTransaction = String.valueOf(availableBalances + 9000000),Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.002s,PASSED
+"println(""so du kha dung la: "" + amountTransaction)",Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:05,0.000s,PASSED
+xpath(xpathFieldAmount)).sendKeys(amountTransaction),Chrome 129.0.0.0,,,12-10-2024 23:33:05,12-10-2024 23:33:06,0.315s,PASSED
+xpath(xpathConfirm)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:06,12-10-2024 23:33:06,0.282s,PASSED
+"Assert.assertEquals(xpath(""//p[contains(text(),'Số tiền rút không được lớn hơn "" + value + ""VNĐ')]""))).getText(), ""Số tiền rút không được lớn hơn "" + value + ""VNĐ"")",Chrome 129.0.0.0,,,12-10-2024 23:33:06,12-10-2024 23:33:07,1.366s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:33:07,12-10-2024 23:33:07,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_05_Kiểm tra khi nhập số tiền bé hơn số tiền khả dụng,Chrome 129.0.0.0,,,12-10-2024 23:33:07,12-10-2024 23:33:44,37.161s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:33:07,12-10-2024 23:33:11,3.481s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:33:11,12-10-2024 23:33:11,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:11,12-10-2024 23:33:12,0.907s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:12,12-10-2024 23:33:13,1.602s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:33:13,12-10-2024 23:33:15,1.947s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:15,12-10-2024 23:33:16,0.459s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 10)",Chrome 129.0.0.0,,,12-10-2024 23:33:16,12-10-2024 23:33:16,0.003s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:33:16,12-10-2024 23:33:16,0.240s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:33:16,12-10-2024 23:33:16,0.039s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:33:16,12-10-2024 23:33:19,3.017s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:33:19,12-10-2024 23:33:19,0.012s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:33:19,12-10-2024 23:33:19,0.241s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:33:19,12-10-2024 23:33:19,0.105s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:33:19,12-10-2024 23:33:20,0.252s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:33:20,12-10-2024 23:33:20,0.154s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:20,12-10-2024 23:33:20,0.265s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:20,12-10-2024 23:33:20,0.479s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:33:20,12-10-2024 23:33:21,0.743s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:21,12-10-2024 23:33:22,0.420s,PASSED
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUser))),Chrome 129.0.0.0,,,12-10-2024 23:33:22,12-10-2024 23:33:31,9.851s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:31,12-10-2024 23:33:32,0.264s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:32,12-10-2024 23:33:32,0.274s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:32,12-10-2024 23:33:32,0.479s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:32,12-10-2024 23:33:33,0.476s,PASSED
+xpath(xpathBtnContinue)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:33,12-10-2024 23:33:33,0.258s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:33:33,12-10-2024 23:33:44,10.320s,PASSED
+catch (org.openqa.selenium.TimeoutException e),Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.001s,PASSED
+soDuKhaDung = driver.findElement(By.xpath(xpathSoDuKhaDung)),Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.225s,PASSED
+"value = soDuKhaDung.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.007s,PASSED
+"availableBalances = Integer.parseInt(value.replace("","", """"))",Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.001s,PASSED
+"println(""so du kha dung la: "" + availableBalances)",Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.000s,PASSED
+amountTransaction = String.valueOf(availableBalances + 90000000),Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.001s,PASSED
+"println(""so du kha dung la: "" + amountTransaction)",Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.000s,PASSED
+xpath(xpathFieldAmount)).sendKeys(amountTransaction),Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.295s,PASSED
+xpath(xpathConfirm)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.282s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:44,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_06_Kiểm tra khi rút tiền thành công và duyệt lần 1,Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:34:55,1m - 10.528s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:33:44,12-10-2024 23:33:47,2.975s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:33:47,12-10-2024 23:33:47,0.000s,PASSED
+js = driver,Chrome 129.0.0.0,,,12-10-2024 23:33:47,12-10-2024 23:33:47,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:47,12-10-2024 23:33:48,0.911s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:48,12-10-2024 23:33:52,3.911s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:33:52,12-10-2024 23:33:52,0.273s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:33:52,12-10-2024 23:33:53,0.461s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:33:53,12-10-2024 23:33:53,0.000s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:33:53,12-10-2024 23:33:53,0.240s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:33:53,12-10-2024 23:33:53,0.039s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:33:53,12-10-2024 23:33:56,3.039s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:33:56,12-10-2024 23:33:57,0.246s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:33:57,12-10-2024 23:33:57,0.108s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:33:57,12-10-2024 23:33:57,0.250s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:33:57,12-10-2024 23:33:57,0.156s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:57,12-10-2024 23:33:57,0.267s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:57,12-10-2024 23:33:58,0.477s,PASSED
+"startElement = driver.findElement(By.xpath(""//strong[contains(text(),'Thu hộ:')]""))",Chrome 129.0.0.0,,,12-10-2024 23:33:58,12-10-2024 23:33:59,0.732s,PASSED
+"script = ""return arguments[0].nextSibling.textContent;""",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.000s,PASSED
+"nextTextNodeContent = js.executeScript(script, startElement)",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.009s,PASSED
+"out.println(""Thu ho "" + nextTextNodeContent)",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.007s,PASSED
+"numericString = nextTextNodeContent.replaceAll(""[^0-9]"", """")",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.002s,PASSED
+thuHo = Integer.parseInt(numericString),Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.000s,PASSED
+"out.println(""Thu ho "" + thuHo)",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.001s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.230s,PASSED
+xpath(xpathMoneyOff)).click(),Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:33:59,0.403s,PASSED
+"wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(""//span[@class='filter-option pull-left'][normalize-space()='"" + username + ""']"")))",Chrome 129.0.0.0,,,12-10-2024 23:33:59,12-10-2024 23:34:11,12.203s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:11,12-10-2024 23:34:12,0.256s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:12,12-10-2024 23:34:12,0.270s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:12,12-10-2024 23:34:12,0.473s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:12,12-10-2024 23:34:13,0.476s,PASSED
+xpath(xpathBtnContinue)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:13,12-10-2024 23:34:13,0.255s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:34:13,12-10-2024 23:34:34,20.631s,PASSED
+catch (org.openqa.selenium.TimeoutException e),Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.002s,PASSED
+soDuKhaDung = driver.findElement(By.xpath(xpathSoDuKhaDung)),Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.223s,PASSED
+"value = soDuKhaDung.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.008s,PASSED
+"availableBalances = Integer.parseInt(value.replace("","", """"))",Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.000s,PASSED
+amountTransaction = 100000,Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.002s,PASSED
+xpath(xpathFieldAmount)).sendKeys(amountTransaction),Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:34,0.300s,PASSED
+xpath(xpathConfirm)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:34,12-10-2024 23:34:35,0.264s,PASSED
+approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathAcceptFirst))),Chrome 129.0.0.0,,,12-10-2024 23:34:35,12-10-2024 23:34:36,1.517s,PASSED
+"js.executeScript(""arguments[0].scrollIntoView(true);"", approveButton)",Chrome 129.0.0.0,,,12-10-2024 23:34:36,12-10-2024 23:34:36,0.007s,PASSED
+approveButton.click(),Chrome 129.0.0.0,,,12-10-2024 23:34:36,12-10-2024 23:34:36,0.031s,PASSED
+Thread.sleep(2000),Chrome 129.0.0.0,,,12-10-2024 23:34:36,12-10-2024 23:34:38,2.009s,PASSED
+xpath(xpathCfBtn)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:38,12-10-2024 23:34:38,0.256s,PASSED
+xpath(xpathBtnOk)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:38,12-10-2024 23:34:39,1.103s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomeFuncRutTien""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:34:39,12-10-2024 23:34:42,3.037s,PASSED
+xpath(xpathBtnAccount)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:42,12-10-2024 23:34:53,10.441s,PASSED
+xpath(xpathSearchField)).sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:34:53,12-10-2024 23:34:53,0.403s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:53,12-10-2024 23:34:54,0.294s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:34:54,12-10-2024 23:34:54,0.480s,PASSED
+"startElement1 = driver.findElement(By.xpath(""//strong[contains(text(),'Thu hộ:')]""))",Chrome 129.0.0.0,,,12-10-2024 23:34:54,12-10-2024 23:34:55,0.736s,PASSED
+"script1 = ""return arguments[0].nextSibling.textContent;""",Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:34:55,0.000s,PASSED
+"nextTextNodeContent1 = js.executeScript(script1, startElement1)",Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:34:55,0.008s,PASSED
+if (nextTextNodeContent1 == nextTextNodeContent),Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:34:55,0.004s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:34:55,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_07_Kiểm tra khi rút tiền thành công và duyệt đủ 4 bước,Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:35:50,54.824s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:34:55,12-10-2024 23:34:57,2.604s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:34:58,12-10-2024 23:34:58,0.000s,PASSED
+js = driver,Chrome 129.0.0.0,,,12-10-2024 23:34:58,12-10-2024 23:34:58,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:34:58,12-10-2024 23:34:58,0.893s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:34:58,12-10-2024 23:35:11,12.131s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:35:11,12-10-2024 23:35:11,0.263s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:35:11,12-10-2024 23:35:11,0.460s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), internal.GlobalVariable.waitSecond)",Chrome 129.0.0.0,,,12-10-2024 23:35:11,12-10-2024 23:35:11,0.001s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:35:11,12-10-2024 23:35:12,0.237s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:12,12-10-2024 23:35:12,0.037s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:35:12,12-10-2024 23:35:17,5.513s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:35:17,12-10-2024 23:35:17,0.248s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:17,12-10-2024 23:35:17,0.121s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:35:17,12-10-2024 23:35:18,0.248s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:35:18,12-10-2024 23:35:18,0.166s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:18,12-10-2024 23:35:18,0.266s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:18,12-10-2024 23:35:19,0.452s,PASSED
+"beforeWithdrawing = driver.findElement(By.xpath(""//strong[contains(text(),'Thu hộ:')]""))",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.843s,PASSED
+"script = ""return arguments[0].nextSibling.textContent;""",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.000s,PASSED
+"beforeWithdrawing1 = js.executeScript(script, beforeWithdrawing)",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.008s,PASSED
+"out.println(""Thu ho "" + beforeWithdrawing1)",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.001s,PASSED
+"numericString = beforeWithdrawing1.replaceAll(""[^0-9]"", """")",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.000s,PASSED
+thuHo = Integer.parseInt(numericString),Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.001s,PASSED
+"out.println(""Thu ho "" + thuHo)",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:19,0.000s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:35:19,12-10-2024 23:35:20,0.228s,PASSED
+"xpath(""//i[normalize-space()='money_off']"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:20,12-10-2024 23:35:20,0.406s,PASSED
+"wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(""//span[@class='filter-option pull-left'][normalize-space()='"" + username + ""']"")))",Chrome 129.0.0.0,,,12-10-2024 23:35:20,12-10-2024 23:35:24,4.021s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:24,12-10-2024 23:35:24,0.258s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:24,12-10-2024 23:35:25,0.271s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:25,12-10-2024 23:35:25,0.471s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:25,12-10-2024 23:35:26,0.477s,PASSED
+"xpath(""//div[@class='btn btn-lg btn-primary waves-effect']"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:26,12-10-2024 23:35:26,0.257s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:35:26,12-10-2024 23:35:27,1.019s,PASSED
+soDuKhaDung = driver.findElement(By.xpath(xpathSoDuKhaDung)),Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.435s,PASSED
+"value = soDuKhaDung.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.010s,PASSED
+"availableBalances = Integer.parseInt(value.replace("","", """"))",Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.000s,PASSED
+"println(""so du kha dung la: "" + availableBalances)",Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.001s,PASSED
+amountTransaction = 2000000,Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.000s,PASSED
+"println(""so du kha dung la: "" + amountTransaction)",Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.001s,PASSED
+if (amountTransaction > availableBalances),Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:27,0.000s,PASSED
+"xpath(""//input[@name='amount']"")).sendKeys(String.valueOf(amountTransaction))",Chrome 129.0.0.0,,,12-10-2024 23:35:27,12-10-2024 23:35:28,0.269s,PASSED
+"xpath(""//button[contains(text(),'Xác nhận')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:28,12-10-2024 23:35:28,0.262s,PASSED
+"approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(""//button[contains(text(),'VH DUYỆT GD RÚT LẦN 1')]"")))",Chrome 129.0.0.0,,,12-10-2024 23:35:28,12-10-2024 23:35:29,1.277s,PASSED
+"js.executeScript(""arguments[0].scrollIntoView(true);"", approveButton)",Chrome 129.0.0.0,,,12-10-2024 23:35:29,12-10-2024 23:35:29,0.006s,PASSED
+approveButton.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:29,12-10-2024 23:35:29,0.027s,PASSED
+Thread.sleep(1000),Chrome 129.0.0.0,,,12-10-2024 23:35:29,12-10-2024 23:35:30,1.006s,PASSED
+"xpath(""//button[contains(text(),'Đồng ý')]""))).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:30,12-10-2024 23:35:30,0.268s,PASSED
+"xpath(""//button[contains(text(),'Ok')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:30,12-10-2024 23:35:31,0.994s,PASSED
+navigate().refresh(),Chrome 129.0.0.0,,,12-10-2024 23:35:31,12-10-2024 23:35:32,0.124s,PASSED
+"approveButton1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(""//button[contains(text(),'VH DUYỆT GD RÚT LẦN 2')]"")))",Chrome 129.0.0.0,,,12-10-2024 23:35:32,12-10-2024 23:35:33,1.204s,PASSED
+"js.executeScript(""arguments[0].scrollIntoView(true);"", approveButton1)",Chrome 129.0.0.0,,,12-10-2024 23:35:33,12-10-2024 23:35:33,0.006s,PASSED
+approveButton1.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:33,12-10-2024 23:35:33,0.023s,PASSED
+Thread.sleep(1000),Chrome 129.0.0.0,,,12-10-2024 23:35:33,12-10-2024 23:35:34,1.005s,PASSED
+"xpath(""//button[contains(text(),'Đồng ý')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:34,12-10-2024 23:35:34,0.248s,PASSED
+"xpath(""//button[contains(text(),'Ok')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:34,12-10-2024 23:35:35,0.860s,PASSED
+navigate().refresh(),Chrome 129.0.0.0,,,12-10-2024 23:35:35,12-10-2024 23:35:35,0.110s,PASSED
+"approveButton2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(""//button[contains(text(),'KT DUYỆT GD RÚT LẦN 1')]"")))",Chrome 129.0.0.0,,,12-10-2024 23:35:35,12-10-2024 23:35:36,0.862s,PASSED
+"js.executeScript(""arguments[0].scrollIntoView(true);"", approveButton2)",Chrome 129.0.0.0,,,12-10-2024 23:35:36,12-10-2024 23:35:36,0.006s,PASSED
+approveButton2.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:36,12-10-2024 23:35:36,0.022s,PASSED
+Thread.sleep(1000),Chrome 129.0.0.0,,,12-10-2024 23:35:36,12-10-2024 23:35:37,1.004s,PASSED
+"xpath(""//button[contains(text(),'Đồng ý')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:37,12-10-2024 23:35:37,0.237s,PASSED
+"xpath(""//button[contains(text(),'Ok')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:37,12-10-2024 23:35:38,0.966s,PASSED
+navigate().refresh(),Chrome 129.0.0.0,,,12-10-2024 23:35:38,12-10-2024 23:35:38,0.112s,PASSED
+"approveButton3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(""//button[contains(text(),'KT DUYỆT GD RÚT LẦN 2')]"")))",Chrome 129.0.0.0,,,12-10-2024 23:35:38,12-10-2024 23:35:39,0.855s,PASSED
+"js.executeScript(""arguments[0].scrollIntoView(true);"", approveButton3)",Chrome 129.0.0.0,,,12-10-2024 23:35:39,12-10-2024 23:35:39,0.006s,PASSED
+approveButton3.click(),Chrome 129.0.0.0,,,12-10-2024 23:35:39,12-10-2024 23:35:39,0.023s,PASSED
+Thread.sleep(1000),Chrome 129.0.0.0,,,12-10-2024 23:35:39,12-10-2024 23:35:40,1.006s,PASSED
+"xpath(""//button[contains(text(),'Đồng ý')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:40,12-10-2024 23:35:40,0.242s,PASSED
+"xpath(""//button[contains(text(),'Ok')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:40,12-10-2024 23:35:41,1.082s,PASSED
+"callTestCase(findTestCase(""Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomeFuncRutTien""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:35:41,12-10-2024 23:35:44,3.020s,PASSED
+"xpath(""//span[contains(text(),'Tài khoản')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:35:44,12-10-2024 23:35:48,3.275s,PASSED
+"xpath(""(//input[@type='text'])[2]"")).sendKeys(username)",Chrome 129.0.0.0,,,12-10-2024 23:35:48,12-10-2024 23:35:48,0.382s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:48,12-10-2024 23:35:48,0.271s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:35:48,12-10-2024 23:35:49,0.478s,PASSED
+"afterWithdraw = driver.findElement(By.xpath(""//strong[contains(text(),'Thu hộ:')]""))",Chrome 129.0.0.0,,,12-10-2024 23:35:49,12-10-2024 23:35:50,0.839s,PASSED
+"script1 = ""return arguments[0].nextSibling.textContent;""",Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.000s,PASSED
+"afterWithdraw1 = js.executeScript(script1, afterWithdraw)",Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.007s,PASSED
+"numericString1 = afterWithdraw1.replaceAll(""[^0-9]"", """")",Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.001s,PASSED
+thuHo1 = Integer.parseInt(numericString1),Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.000s,PASSED
+if (thuHo1 == thuHo - amountTransaction),Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.003s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:50,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_08_Kiểm tra user chưa đăng ký dịch vụ và chọn kì đối soát chưa tồn tại,Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:36:58,1m - 8.213s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:35:50,12-10-2024 23:35:53,3.060s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:35:53,12-10-2024 23:35:53,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:35:53,12-10-2024 23:35:54,1.073s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 30, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:35:54,12-10-2024 23:36:01,7.012s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:36:01,12-10-2024 23:36:01,0.274s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:36:01,12-10-2024 23:36:02,0.458s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 30)",Chrome 129.0.0.0,,,12-10-2024 23:36:02,12-10-2024 23:36:02,0.000s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:36:02,12-10-2024 23:36:02,0.231s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:36:02,12-10-2024 23:36:02,0.037s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:36:02,12-10-2024 23:36:14,11.924s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:36:14,12-10-2024 23:36:14,0.012s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:36:14,12-10-2024 23:36:14,0.238s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:36:14,12-10-2024 23:36:14,0.104s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:36:14,12-10-2024 23:36:14,0.274s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:36:14,12-10-2024 23:36:15,0.160s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:15,12-10-2024 23:36:15,0.254s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:15,12-10-2024 23:36:15,0.485s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:36:15,12-10-2024 23:36:16,0.856s,PASSED
+xpath(xpathBtnRutTien)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:16,12-10-2024 23:36:17,0.419s,PASSED
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUser))),Chrome 129.0.0.0,,,12-10-2024 23:36:17,12-10-2024 23:36:21,4.748s,PASSED
+xpath(xpathUser)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:21,12-10-2024 23:36:22,0.330s,PASSED
+"xpath(xpathUser2)).sendKeys(""dannt21"")",Chrome 129.0.0.0,,,12-10-2024 23:36:22,12-10-2024 23:36:22,0.436s,PASSED
+xpath(xpathUserClicked)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:22,12-10-2024 23:36:22,0.271s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:22,12-10-2024 23:36:25,2.493s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:25,12-10-2024 23:36:25,0.260s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:25,12-10-2024 23:36:26,0.490s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:26,12-10-2024 23:36:26,0.475s,PASSED
+xpath(xpathDayClicked)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:26,12-10-2024 23:36:26,0.269s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:36:26,12-10-2024 23:36:57,30.242s,PASSED
+catch (org.openqa.selenium.TimeoutException e),Chrome 129.0.0.0,,,12-10-2024 23:36:57,12-10-2024 23:36:57,0.001s,PASSED
+xpath(xpathFieldAmount)).sendKeys(amount),Chrome 129.0.0.0,,,12-10-2024 23:36:57,12-10-2024 23:36:57,0.320s,PASSED
+xpath(xpathConfirm)).click(),Chrome 129.0.0.0,,,12-10-2024 23:36:57,12-10-2024 23:36:57,0.286s,PASSED
+"Assert.assertEquals(xpath(xpathError1)).getText(), messError)",Chrome 129.0.0.0,,,12-10-2024 23:36:57,12-10-2024 23:36:58,0.659s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:36:58,12-10-2024 23:36:58,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_09_Kiểm tra user rút tiền và sử dụng dịch vụ chi hộ,Chrome 129.0.0.0,,,12-10-2024 23:36:58,12-10-2024 23:37:40,41.637s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,12-10-2024 23:36:58,12-10-2024 23:37:01,2.847s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,12-10-2024 23:37:01,12-10-2024 23:37:01,0.000s,PASSED
+js = driver,Chrome 129.0.0.0,,,12-10-2024 23:37:01,12-10-2024 23:37:01,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:37:01,12-10-2024 23:37:02,0.900s,PASSED
+"waitForElementVisible(findTestObject(""Trang chủ/userName""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:37:02,12-10-2024 23:37:12,10.137s,PASSED
+"click(findTestObject(""Quản lý tài khoản merchant/menuManagerMerchantAccount""))",Chrome 129.0.0.0,,,12-10-2024 23:37:12,12-10-2024 23:37:12,0.261s,PASSED
+"waitForElementVisible(findTestObject(""Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService""), 10, STOP_ON_FAILURE)",Chrome 129.0.0.0,,,12-10-2024 23:37:12,12-10-2024 23:37:13,0.461s,PASSED
+"wait = new org.openqa.selenium.support.ui.WebDriverWait(com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(), 10)",Chrome 129.0.0.0,,,12-10-2024 23:37:13,12-10-2024 23:37:13,0.001s,PASSED
+menuManagerUserAccount = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathManagerListAccount))),Chrome 129.0.0.0,,,12-10-2024 23:37:13,12-10-2024 23:37:13,0.240s,PASSED
+menuManagerUserAccount.click(),Chrome 129.0.0.0,,,12-10-2024 23:37:13,12-10-2024 23:37:13,0.039s,PASSED
+userCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUserCode))),Chrome 129.0.0.0,,,12-10-2024 23:37:13,12-10-2024 23:37:17,3.767s,PASSED
+println(userCode.getText()),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:17,0.012s,PASSED
+accountBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathBtnAccount))),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:17,0.238s,PASSED
+accountBtn.click(),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:17,0.111s,PASSED
+searchTextbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathSearchTextbox))),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:17,0.236s,PASSED
+searchTextbox.sendKeys(username),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:17,0.154s,PASSED
+xpath(xpathOption)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:17,12-10-2024 23:37:18,0.259s,PASSED
+xpath(xpathBtnSearch)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:18,12-10-2024 23:37:18,0.467s,PASSED
+"Assert.assertEquals(xpath(xpathAccountName)).getText(), username)",Chrome 129.0.0.0,,,12-10-2024 23:37:18,12-10-2024 23:37:19,1.048s,PASSED
+xpath(xpathBtnRutTien)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:19,12-10-2024 23:37:20,0.401s,PASSED
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathUser))),Chrome 129.0.0.0,,,12-10-2024 23:37:20,12-10-2024 23:37:25,5.569s,PASSED
+xpath(xpathViRut)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:25,12-10-2024 23:37:25,0.258s,PASSED
+xpath(xpathOptionThuho)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:25,12-10-2024 23:37:26,0.269s,PASSED
+xpath(xpathDay)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:26,12-10-2024 23:37:26,0.470s,PASSED
+xpath(xpathToday)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:26,12-10-2024 23:37:27,0.488s,PASSED
+xpath(xpathDayClicked)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:27,12-10-2024 23:37:27,0.244s,PASSED
+try,Chrome 129.0.0.0,,,12-10-2024 23:37:27,12-10-2024 23:37:28,1.011s,PASSED
+"soDuVi = driver.findElement(By.xpath(""//label[contains(text(),'Số dư Ví')]/following::input[1]""))",Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:28,0.436s,PASSED
+"inputValue = soDuVi.getAttribute(""value"")",Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:28,0.009s,PASSED
+"numericString = inputValue.replaceAll(""[^0-9]"", """")",Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:28,0.001s,PASSED
+walletBalance = Integer.parseInt(numericString),Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:28,0.000s,PASSED
+out.println(walletBalance),Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:28,0.002s,PASSED
+xpath(xpathFieldAmount)).sendKeys(amount),Chrome 129.0.0.0,,,12-10-2024 23:37:28,12-10-2024 23:37:29,0.275s,PASSED
+"xpath(""//label[contains(text(),'Sử dụng dịch vụ chi hộ')]"")).click()",Chrome 129.0.0.0,,,12-10-2024 23:37:29,12-10-2024 23:37:29,0.263s,PASSED
+xpath(xpathConfirm)).click(),Chrome 129.0.0.0,,,12-10-2024 23:37:29,12-10-2024 23:37:29,0.254s,PASSED
+testText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(UserPayIn))),Chrome 129.0.0.0,,,12-10-2024 23:37:29,12-10-2024 23:37:40,10.392s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,12-10-2024 23:37:40,12-10-2024 23:37:40,0.000s,PASSED

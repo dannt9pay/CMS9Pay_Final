@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_08_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ Va</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d1ad2e54-6bc6-4684-8110-958da44c8643</testCaseGuid>
+</TestCaseEntity>

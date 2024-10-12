@@ -17,7 +17,7 @@ class statusTestcase {
 		String testCaseId = testCaseContext.getTestCaseId()
 		//WebUI.navigateToUrl(GlobalVariable.baseUrl)
 		String url
-		if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra thay đổi sau khi cấu hình VA trên MCV") {
+		if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_14_Kiểm tra thay đổi sau khi cấu hình VA trên MCV") {
 			url = "https://stg-console.9pay.mobi/login"
 		} else {
 			url = "https://stg-cms-console.9pay.mobi/login"
@@ -30,7 +30,7 @@ class statusTestcase {
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 		
 		String testCaseId = testCaseContext.getTestCaseId()
-        if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/Kiểm tra chức năng xác nhận cấu hình thay đổi VA") {
+        if (testCaseId == "Test Cases/Quản lý tài khoản merchant/Quản lý dịch vụ merchant/TC_13_Kiểm tra chức năng xác nhận cấu hình thay đổi VA") {
             Thread.sleep(30000)
         }
 		//WebUI.closeBrowser()

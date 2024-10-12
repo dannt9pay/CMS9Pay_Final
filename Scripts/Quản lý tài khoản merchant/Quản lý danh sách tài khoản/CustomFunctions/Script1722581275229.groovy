@@ -12,10 +12,9 @@ def driver = DriverFactory.getWebDriver()
 
 sleep(2000)
 WebElement element1 = driver.findElement(By.xpath(GlobalVariable.xpathManagerMC));
-//((JavascriptExecutor) driver).executeScript("arguments[0].click();", element1);
 Actions actions = new Actions(driver)
 actions.moveToElement(element1).click().perform()
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 15)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 30)
 WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerServiceMC)))
 actions.moveToElement(element2).click().perform()
 

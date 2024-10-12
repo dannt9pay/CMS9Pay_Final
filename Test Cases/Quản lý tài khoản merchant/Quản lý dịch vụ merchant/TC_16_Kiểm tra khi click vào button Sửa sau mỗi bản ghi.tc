@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_16_Kiểm tra khi click vào button Sửa sau mỗi bản ghi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b4b7c454-ebae-4e56-8a36-085d12321ba0</testCaseGuid>
+</TestCaseEntity>

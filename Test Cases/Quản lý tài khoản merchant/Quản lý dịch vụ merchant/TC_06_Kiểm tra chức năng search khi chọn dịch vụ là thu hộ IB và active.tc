@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Kiểm tra chức năng search khi chọn dịch vụ là thu hộ IB và active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>303902fb-6345-4c69-979a-216f27c369e1</testCaseGuid>
+</TestCaseEntity>

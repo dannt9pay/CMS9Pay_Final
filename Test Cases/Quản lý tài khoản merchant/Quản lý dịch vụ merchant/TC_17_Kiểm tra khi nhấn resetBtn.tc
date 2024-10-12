@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_17_Kiểm tra khi nhấn resetBtn</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d5cf42b1-b395-4d56-aeca-7ae918d8ce21</testCaseGuid>
+</TestCaseEntity>

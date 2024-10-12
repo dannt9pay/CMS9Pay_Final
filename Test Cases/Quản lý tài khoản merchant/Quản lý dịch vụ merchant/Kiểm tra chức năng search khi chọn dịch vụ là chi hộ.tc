@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng search khi chọn dịch vụ là chi hộ</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>811f4ed7-9628-4d0d-b825-8f5e3aa7eb82</testCaseGuid>
-</TestCaseEntity>

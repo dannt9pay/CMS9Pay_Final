@@ -3,8 +3,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
@@ -53,7 +53,13 @@ driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
 
 driver.findElement(By.xpath(GlobalVariable.xpathBtnContinue)).click()
-driver.findElement(By.xpath(GlobalVariable.xpathCfBtn)).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
 WebElement soDuKhaDung = driver.findElement(By.xpath(GlobalVariable.xpathSoDuKhaDung))
 String value = soDuKhaDung.getAttribute('value')

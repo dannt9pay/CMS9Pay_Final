@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_03_Kiểm tra chức năng search khi chọn dịch vụ là chi hộ và Active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a566b611-5f17-43c2-9e38-a32adc125856</testCaseGuid>
+</TestCaseEntity>

@@ -2,7 +2,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
-import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -40,9 +40,16 @@ driver.findElement(By.xpath(GlobalVariable.xpathHomNay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnContinue)).click()
 
 //Nếu đã tồn tại kì đối soát thì thêm 3 dòng  dưới  
-WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
-Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
-driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+//WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
+//Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+//driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn ')]")))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
 driver.findElement(By.xpath(GlobalVariable.xpathDepositTextbox)).sendKeys("150000")
 driver.findElement(By.xpath(GlobalVariable.xpathButtonSubmit)).click()

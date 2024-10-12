@@ -156,7 +156,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'//span[contains(text(),\'Quản lý tài khoản merchant\')]'</initValue>
       <name>xpathManagerMC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'30'</initValue>
+      <name>waitSecond</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

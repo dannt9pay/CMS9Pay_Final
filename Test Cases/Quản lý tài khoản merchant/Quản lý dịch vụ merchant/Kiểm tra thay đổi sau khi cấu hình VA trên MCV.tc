@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra thay đổi sau khi cấu hình VA trên MCV</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>bbb0c938-ce75-4858-8531-564888976f18</testCaseGuid>
-</TestCaseEntity>

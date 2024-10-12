@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra khi chọn ví và chọn kì đối soát chưa tồn tại trước đó và nhấn tiếp tục</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>094b7fa3-bdec-4f0d-8e0c-dca3841da340</testCaseGuid>
-</TestCaseEntity>

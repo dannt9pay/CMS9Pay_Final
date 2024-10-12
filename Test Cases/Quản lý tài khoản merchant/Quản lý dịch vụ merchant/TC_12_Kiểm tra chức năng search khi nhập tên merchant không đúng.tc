@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_12_Kiểm tra chức năng search khi nhập tên merchant không đúng</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55a186fe-ffb0-49ae-8497-4d6bcec08cb6</testCaseGuid>
+</TestCaseEntity>

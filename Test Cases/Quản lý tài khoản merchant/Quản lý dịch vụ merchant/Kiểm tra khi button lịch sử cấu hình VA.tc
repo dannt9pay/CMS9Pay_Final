@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra khi button lịch sử cấu hình VA</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5f62bcf7-d150-4c16-8592-30c92e6f08b0</testCaseGuid>
-</TestCaseEntity>

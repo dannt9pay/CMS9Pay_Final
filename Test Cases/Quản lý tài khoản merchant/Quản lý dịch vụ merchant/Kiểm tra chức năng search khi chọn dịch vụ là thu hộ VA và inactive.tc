@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng search khi chọn dịch vụ là thu hộ VA và inactive</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>071ba04b-037a-45ed-b02c-c9040b51626c</testCaseGuid>
-</TestCaseEntity>

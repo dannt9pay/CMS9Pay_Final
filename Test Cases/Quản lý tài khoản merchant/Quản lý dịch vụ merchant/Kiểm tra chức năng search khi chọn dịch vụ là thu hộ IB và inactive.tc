@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng search khi chọn dịch vụ là thu hộ IB và inactive</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7edd3d5f-0872-4cfa-953d-46e4c9fe1990</testCaseGuid>
-</TestCaseEntity>
