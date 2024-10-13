@@ -1,0 +1,80 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Rút tiền,Chrome 129.0.0.0,,,13-10-2024 21:59:35,13-10-2024 22:00:36,1m - 0.259s,FAILED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_01_Kiểm tra mở form Rút tiền,Chrome 129.0.0.0,,,13-10-2024 21:59:35,13-10-2024 21:59:40,4.416s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:35,13-10-2024 21:59:39,3.927s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 21:59:39,13-10-2024 21:59:39,0.004s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 21:59:39,13-10-2024 21:59:40,0.376s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:40,13-10-2024 21:59:40,0.002s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_02_Kiểm tra validate trường thông tin,Chrome 129.0.0.0,,,13-10-2024 21:59:40,13-10-2024 21:59:43,3.300s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:40,13-10-2024 21:59:43,2.940s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 21:59:43,13-10-2024 21:59:43,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 21:59:43,13-10-2024 21:59:43,0.307s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:43,13-10-2024 21:59:43,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_03_Kiểm tra khi nhập đầy đủ và nhấn tiếp tục,Chrome 129.0.0.0,,,13-10-2024 21:59:43,13-10-2024 21:59:47,3.784s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:43,13-10-2024 21:59:47,3.430s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 21:59:47,13-10-2024 21:59:47,0.002s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 21:59:47,13-10-2024 21:59:47,0.298s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:47,13-10-2024 21:59:47,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_04_Kiểm tra khi nhập số tiền lớn hơn số dư khả dụng,Chrome 129.0.0.0,,,13-10-2024 21:59:47,13-10-2024 21:59:50,3.119s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:47,13-10-2024 21:59:50,2.717s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 21:59:50,13-10-2024 21:59:50,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 21:59:50,13-10-2024 21:59:50,0.294s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:50,13-10-2024 21:59:50,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_05_Kiểm tra khi nhập số tiền bé hơn số tiền khả dụng,Chrome 129.0.0.0,,,13-10-2024 21:59:50,13-10-2024 21:59:53,3.274s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:50,13-10-2024 21:59:53,2.912s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 21:59:53,13-10-2024 21:59:53,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 21:59:53,13-10-2024 21:59:53,0.301s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:53,13-10-2024 21:59:53,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_06_Kiểm tra khi rút tiền thành công và duyệt lần 1,Chrome 129.0.0.0,,,13-10-2024 21:59:53,13-10-2024 22:00:03,9.178s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 21:59:53,13-10-2024 22:00:02,8.769s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:02,13-10-2024 22:00:02,0.001s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:02,13-10-2024 22:00:02,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:02,13-10-2024 22:00:03,0.298s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:03,13-10-2024 22:00:03,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_07_Kiểm tra khi rút tiền thành công và duyệt đủ 4 bước,Chrome 129.0.0.0,,,13-10-2024 22:00:03,13-10-2024 22:00:12,9.528s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:03,13-10-2024 22:00:12,9.140s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:12,0.001s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:12,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:12,0.298s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:12,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_08_Kiểm tra user chưa đăng ký dịch vụ và chọn kì đối soát chưa tồn tại,Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:16,4.067s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:12,13-10-2024 22:00:14,2.363s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:14,13-10-2024 22:00:14,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:14,13-10-2024 22:00:16,1.620s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:16,13-10-2024 22:00:16,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_09_Kiểm tra user rút tiền và sử dụng dịch vụ chi hộ,Chrome 129.0.0.0,,,13-10-2024 22:00:16,13-10-2024 22:00:19,2.985s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:16,13-10-2024 22:00:19,2.620s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:19,0.001s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:19,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:19,0.287s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:19,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_10_Kiểm tra khi rút tiền số tiền lớn hơn số tiền có thể rút do tạm giữ,Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:25,6.120s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:19,13-10-2024 22:00:25,5.755s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:25,0.001s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:25,0.000s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:25,0.289s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:25,0.000s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_11_Kiểm tra khi rút tiền số tiền bé hơn số tiền có thể rút do tạm giữ,Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:29,4.271s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:25,13-10-2024 22:00:29,3.904s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:29,0.000s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:29,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:29,0.290s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:29,0.001s,PASSED
+,,,,,,,
+Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_12_Kiểm tra khi rút tiền số tiền bé hơn số tiền có thể rút do tạm giữ và chọn chấp nhận cho rút số tiền tạm giữ,Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:36,6.121s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:29,13-10-2024 22:00:35,5.770s,PASSED
+driver = getWebDriver(),Chrome 129.0.0.0,,,13-10-2024 22:00:35,13-10-2024 22:00:35,0.001s,PASSED
+js = driver,Chrome 129.0.0.0,,,13-10-2024 22:00:35,13-10-2024 22:00:35,0.001s,PASSED
+"callTestCase(findTestCase(""Test Cases/Login/LoginCommon""), [:], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,13-10-2024 22:00:35,13-10-2024 22:00:36,0.291s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 129.0.0.0,,,13-10-2024 22:00:36,13-10-2024 22:00:36,0.001s,PASSED

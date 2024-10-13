@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHan
 WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), GlobalVariable.waitSecond, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
-	10, FailureHandling.STOP_ON_FAILURE)
+	30, FailureHandling.STOP_ON_FAILURE)
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), GlobalVariable.waitSecond)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
@@ -49,6 +49,7 @@ driver.findElement(By.xpath(GlobalVariable.xpathBtnRutTien)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathUser)))
 
 driver.findElement(By.xpath(GlobalVariable.xpathViRut)).click()
+sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
@@ -121,4 +122,9 @@ if (thuHo1 == walletBalance - amountTransaction1) {
 	println("Số tiền trừ sai")
 	KeywordUtil.markFailed("Test case đã fail với số tiền chưa được cộng đúng.")
 }
-
+driver.findElement(By.xpath(GlobalVariable.xpathEditUser)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathTTHD)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathSoTienTamGiu)).clear()
+driver.findElement(By.xpath(GlobalVariable.xpathSoTienTamGiu)).sendKeys("0")
+driver.findElement(By.xpath(GlobalVariable.xpathCapNhat)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()

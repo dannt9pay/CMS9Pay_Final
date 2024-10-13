@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHan
 WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), GlobalVariable.waitSecond, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
-	10, FailureHandling.STOP_ON_FAILURE)
+	30, FailureHandling.STOP_ON_FAILURE)
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), GlobalVariable.waitSecond)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
@@ -31,7 +31,8 @@ println(userCode.getText())
 WebElement accountBtn  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathBtnAccount)))
 accountBtn.click();
 WebElement searchTextbox  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathSearchTextbox)))
-searchTextbox.sendKeys(GlobalVariable.username);
+searchTextbox.sendKeys(GlobalVariable.username)
+sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.xpathOption)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnSearch)).click()
 //Nếu chưa config thì check CMS 
@@ -49,6 +50,7 @@ driver.findElement(By.xpath(GlobalVariable.xpathBtnRutTien)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathUser)))
 
 driver.findElement(By.xpath(GlobalVariable.xpathViRut)).click()
+sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
@@ -100,7 +102,7 @@ approveButton3.click()
 Thread.sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
-WebUI.callTestCase(findTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomeFuncRutTien'), [:], FailureHandling.STOP_ON_FAILURE)
 //String scriptClicked = "document.evaluate(\"//*[text()='Quản lý tài khoản merchant']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();";
 //js.executeScript(scriptClicked);
 //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount))).click()

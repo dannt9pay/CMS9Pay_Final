@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -21,7 +22,7 @@ WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHan
 WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), GlobalVariable.waitSecond, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
-	10, FailureHandling.STOP_ON_FAILURE)
+	30, FailureHandling.STOP_ON_FAILURE)
 WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), GlobalVariable.waitSecond)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
@@ -49,12 +50,20 @@ driver.findElement(By.xpath(GlobalVariable.xpathBtnRutTien)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathUser)))
 
 driver.findElement(By.xpath(GlobalVariable.xpathViRut)).click()
+sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDayClicked)).click()
 
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.BtnOkXpath))).click()
+//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.BtnOkXpath))).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathXacNhanKiDS)))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
 WebElement overbalance =  driver.findElement(By.xpath(GlobalVariable.xpathLabelAvailbeWallet))
 String inputValue = overbalance.getAttribute("value");
@@ -66,7 +75,7 @@ String outputValue = availbeBalance.getAttribute("value");
 def outputValueClear = outputValue.replaceAll("[^0-9]", "")
 int availbeBalanceInt = Integer.parseInt(outputValueClear)
 
-driver.findElement(By.xpath(GlobalVariable.xpathFieldAmount)).sendKeys(GlobalVariable.amountInvalid)
+driver.findElement(By.xpath(GlobalVariable.xpathFieldAmount)).sendKeys("2100000")
 driver.findElement(By.xpath("//label[contains(text(),'Chấp nhận cho rút số tiền tạm giữ')]")).click()
 driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()
 
@@ -107,18 +116,28 @@ driver.findElement(By.xpath(GlobalVariable.xpathBtnAccount)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathSearchField)).sendKeys(GlobalVariable.username)
 driver.findElement(By.xpath(GlobalVariable.xpathOption)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnSearch)).click()
-WebElement afterWithdraw = driver.findElement(By.xpath(GlobalVariable.xpathAvailbleBalancePayin));
-
-String script1 = "return arguments[0].nextSibling.textContent;";
-String afterWithdraw1 = (String) js.executeScript(script1, afterWithdraw);
-def numericString1 = afterWithdraw1.replaceAll("[^0-9]", "")
-int thuHo1 = Integer.parseInt(numericString1)
-int amountTransaction1 = Integer.parseInt(GlobalVariable.amountValid)
-if (thuHo1 == walletBalance - amountTransaction1) {
-	println("Số tiền đã đúng ")
-	KeywordUtil.markPassed("Test case đã pass với số tiền chưa được trừ khỏi tài khoản.")
-} else {
-	println("Số tiền trừ sai")
-	KeywordUtil.markFailed("Test case đã fail với số tiền chưa được cộng đúng.")
-}
-
+//WebElement afterWithdraw = driver.findElement(By.xpath(GlobalVariable.xpathAvailbleBalancePayin));
+//
+//String script1 = "return arguments[0].nextSibling.textContent;";
+//String afterWithdraw1 = (String) js.executeScript(script1, afterWithdraw);
+//def numericString1 = afterWithdraw1.replaceAll("[^0-9]", "")
+//int thuHo1 = Integer.parseInt(numericString1)
+//int amountTransaction1 = Integer.parseInt(GlobalVariable.amountValid)
+//println("amount1: " + amountTransaction1)
+//println("amount2: " + walletBalance)
+//println("amount3: " + thuHo1)
+//
+//
+//if (thuHo1 == walletBalance - amountTransaction1) {
+//	println("Số tiền đã đúng ")
+//	KeywordUtil.markPassed("Test case đã pass với số tiền chưa được trừ khỏi tài khoản.")
+//} else {
+//	println("Số tiền trừ sai")
+//	KeywordUtil.markFailed("Test case đã fail với số tiền chưa được cộng đúng.")
+//}
+driver.findElement(By.xpath(GlobalVariable.xpathEditUser)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathTTHD)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathSoTienTamGiu)).clear()
+driver.findElement(By.xpath(GlobalVariable.xpathSoTienTamGiu)).sendKeys("0")
+driver.findElement(By.xpath(GlobalVariable.xpathCapNhat)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()

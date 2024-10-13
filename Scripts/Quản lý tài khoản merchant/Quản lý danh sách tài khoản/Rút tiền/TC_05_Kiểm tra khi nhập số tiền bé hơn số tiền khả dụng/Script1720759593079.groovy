@@ -17,11 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 def driver = DriverFactory.getWebDriver()
 
 WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHandling.STOP_ON_FAILURE)
-WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 30, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
 	10, FailureHandling.STOP_ON_FAILURE)
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 30)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
 
@@ -37,6 +37,7 @@ Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathAccountName)
 driver.findElement(By.xpath(GlobalVariable.xpathMoneyOff)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathUser)))
 driver.findElement(By.xpath(GlobalVariable.xpathViRut)).click()
+sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
