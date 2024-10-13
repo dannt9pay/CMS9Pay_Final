@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/t5/b7k67ybj7gz9rv6nyq7t561w0000gn/T/Katalon/Test Cases/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/Qu\u1EA3n l\u00FD danh s\u00E1ch t\u00E0i kho\u1EA3n/N\u1EA1p ti\u1EC1n/TC_10_Ki\u1EC3m tra khi ch\u1ECDn v\u00ED \u0111\u00FAng v\u00E0 ch\u1ECDn lo\u1EA1i giao d\u1ECBch l\u00E0 ho\u00E0n ph\u00ED/20241012_231334/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/t5/b7k67ybj7gz9rv6nyq7t561w0000gn/T/Katalon/Test Cases/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/Qu\u1EA3n l\u00FD danh s\u00E1ch t\u00E0i kho\u1EA3n/R\u00FAt ti\u1EC1n/TC_10_Ki\u1EC3m tra khi r\u00FAt ti\u1EC1n s\u1ED1 ti\u1EC1n l\u1EDBn h\u01A1n s\u1ED1 ti\u1EC1n c\u00F3 th\u1EC3 r\u00FAt do t\u1EA1m gi\u1EEF/20241013_113700/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Nạp tiền/TC_10_Kiểm tra khi chọn ví đúng và chọn loại giao dịch là hoàn phí', new TestCaseBinding('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Nạp tiền/TC_10_Kiểm tra khi chọn ví đúng và chọn loại giao dịch là hoàn phí',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_10_Kiểm tra khi rút tiền số tiền lớn hơn số tiền có thể rút do tạm giữ', new TestCaseBinding('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/Rút tiền/TC_10_Kiểm tra khi rút tiền số tiền lớn hơn số tiền có thể rút do tạm giữ',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

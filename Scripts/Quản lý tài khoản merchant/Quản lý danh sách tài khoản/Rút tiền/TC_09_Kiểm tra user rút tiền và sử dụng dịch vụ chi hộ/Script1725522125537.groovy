@@ -68,7 +68,7 @@ driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()
 WebElement testText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.UserPayIn)))
 String text1 = testText.getText().split("\\n")[0].trim()
 
-Assert.assertEquals(text1, "Chi về ngân hàng")
+Assert.assertEquals(text1, "Sử dụng chi hộ")
 
 WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'VH DUYỆT GD RÚT LẦN 1')]")))
 js.executeScript("arguments[0].scrollIntoView(true);", approveButton);
@@ -76,21 +76,21 @@ approveButton.click()
 Thread.sleep(1000)
 wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.BtnOkXpath))).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
-
+driver.navigate().refresh()
 WebElement approveButton1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'VH DUYỆT GD RÚT LẦN 2')]")))
 js.executeScript("arguments[0].scrollIntoView(true);", approveButton1);
 approveButton1.click()
 Thread.sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
-
+driver.navigate().refresh()
 WebElement approveButton2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'KT DUYỆT GD RÚT LẦN 1')]")))
 js.executeScript("arguments[0].scrollIntoView(true);", approveButton2);
 approveButton2.click()
 Thread.sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
-
+driver.navigate().refresh()
 WebElement approveButton3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'KT DUYỆT GD RÚT LẦN 2')]")))
 js.executeScript("arguments[0].scrollIntoView(true);", approveButton3);
 approveButton3.click()
@@ -98,9 +98,7 @@ Thread.sleep(1000)
 driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
 
-String scriptClicked = "document.evaluate(\"//*[text()='Quản lý tài khoản merchant']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();";
-js.executeScript(scriptClicked);
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Quản lý danh sách tài khoản')]"))).click()
+WebUI.callTestCase(findTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomeFuncRutTien'), [:], FailureHandling.STOP_ON_FAILURE)
 driver.findElement(By.xpath("//span[contains(text(),'Tài khoản')]")).click()
 driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(GlobalVariable.username);
 driver.findElement(By.xpath(GlobalVariable.xpathOption)).click()

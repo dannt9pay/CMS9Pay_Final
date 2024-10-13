@@ -557,6 +557,31 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object xpathEditUser
+     
+    /**
+     * <p></p>
+     */
+    public static Object xpathTTHD
+     
+    /**
+     * <p></p>
+     */
+    public static Object xpathSoTienTamGiu
+     
+    /**
+     * <p></p>
+     */
+    public static Object xpathCapNhat
+     
+    /**
+     * <p></p>
+     */
+    public static Object xpathSoDuKhongRut
+     
+    /**
+     * <p></p>
+     */
     public static Object xpathDropdownSwitchFrom
      
     /**
@@ -830,6 +855,11 @@ public class GlobalVariable {
             xpathParentThuHo = selectedVariables['xpathParentThuHo']
             xpathSoDuKhaDung = selectedVariables['xpathSoDuKhaDung']
             xpathSoDuVi = selectedVariables['xpathSoDuVi']
+            xpathEditUser = selectedVariables['xpathEditUser']
+            xpathTTHD = selectedVariables['xpathTTHD']
+            xpathSoTienTamGiu = selectedVariables['xpathSoTienTamGiu']
+            xpathCapNhat = selectedVariables['xpathCapNhat']
+            xpathSoDuKhongRut = selectedVariables['xpathSoDuKhongRut']
             xpathDropdownSwitchFrom = selectedVariables['xpathDropdownSwitchFrom']
             xpathOptionTCB = selectedVariables['xpathOptionTCB']
             xpathDropdownSwitchTo = selectedVariables['xpathDropdownSwitchTo']

@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/mac/Documents/test/Cms9Pay/Reports/20241012_233106/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/R\u00FAt ti\u1EC1n/20241012_233107/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/mac/Documents/test/Cms9Pay/Reports/20241013_120819/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/R\u00FAt ti\u1EC1n/20241013_120820/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Quản lý tài khoản merchant/Rút tiền', suiteProperties, new File("/Users/mac/Documents/test/Cms9Pay/Reports/20241012_233106/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/R\u00FAt ti\u1EC1n/20241012_233107/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Quản lý tài khoản merchant/Rút tiền', suiteProperties, new File("/Users/mac/Documents/test/Cms9Pay/Reports/20241013_120819/Qu\u1EA3n l\u00FD t\u00E0i kho\u1EA3n merchant/R\u00FAt ti\u1EC1n/20241013_120820/testCaseBinding"))

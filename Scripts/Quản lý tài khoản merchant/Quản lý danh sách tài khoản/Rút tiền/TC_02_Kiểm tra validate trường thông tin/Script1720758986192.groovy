@@ -35,6 +35,8 @@ driver.findElement(By.xpath(GlobalVariable.xpathBtnSearch)).click()
 
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathAccountName)).getText(), GlobalVariable.username)
 driver.findElement(By.xpath(GlobalVariable.xpathMoneyOff)).click()
+
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathUser)))
 driver.findElement(By.xpath(GlobalVariable.xpathBtnContinue)).click()
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathErrorWallet)).getText(), "Vui lòng chọn ví dịch vụ")
 

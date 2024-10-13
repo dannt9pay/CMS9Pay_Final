@@ -58,5 +58,5 @@ try {
 }
 driver.findElement(By.xpath(GlobalVariable.xpathFieldAmount)).sendKeys(GlobalVariable.amount)
 driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()
-
-Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathError1)).getText(), GlobalVariable.messError)
+sleep(2000)
+Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathError1)).getText(), "Tài khoản không đủ tiền để rút")

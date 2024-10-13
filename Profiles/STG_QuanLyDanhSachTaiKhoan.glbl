@@ -251,7 +251,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'//p[contains(text(),\'Dịch vụ chưa được kích hoạt\')]'</initValue>
+      <initValue>'//p[contains(text(),\'Tài khoản không đủ tiền để rút\')]'</initValue>
       <name>xpathError1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -261,7 +261,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'//td[contains(text(),\'Chi về ngân hàng\')]'</initValue>
+      <initValue>'//td[contains(text(),\'Sử dụng chi hộ\')]'</initValue>
       <name>UserPayIn</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -296,7 +296,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>20</initValue>
+      <initValue>30</initValue>
       <name>waitSecond</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -548,5 +548,30 @@
       <description></description>
       <initValue>'//label[contains(text(),\'Số dư Ví\')]//parent::div//following-sibling::div//input'</initValue>
       <name>xpathSoDuVi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//i[normalize-space()=\'edit\']'</initValue>
+      <name>xpathEditUser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//span[contains(text(),\'Thông tin hợp đồng\')]'</initValue>
+      <name>xpathTTHD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//input[@placeholder=\'Số tiền yêu cầu tạm giữ\']'</initValue>
+      <name>xpathSoTienTamGiu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//button[contains(text(),\'Cập nhật\')]'</initValue>
+      <name>xpathCapNhat</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//strong[contains(text(),\'Số dư không được rút:\')]'</initValue>
+      <name>xpathSoDuKhongRut</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

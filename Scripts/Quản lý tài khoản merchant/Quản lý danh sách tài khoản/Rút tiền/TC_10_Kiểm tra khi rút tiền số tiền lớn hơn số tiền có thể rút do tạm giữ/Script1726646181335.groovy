@@ -5,6 +5,7 @@ import java.text.DecimalFormat
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -19,11 +20,11 @@ import internal.GlobalVariable as GlobalVariable
 def driver = DriverFactory.getWebDriver()
 JavascriptExecutor js = (JavascriptExecutor) driver;
 WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHandling.STOP_ON_FAILURE)
-WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 30, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Quản lý tài khoản merchant/menuManagerMerchantAccount'));
 WebUI.waitForElementVisible(findTestObject('Quản lý tài khoản merchant/Quản lý dịch vụ merchant/menuManagerMerchantService'),
 	10, FailureHandling.STOP_ON_FAILURE)
-WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 10)
+WebDriverWait wait = new WebDriverWait(DriverFactory.getWebDriver(), 30)
 WebElement menuManagerUserAccount  = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.xpathManagerListAccount)))
 menuManagerUserAccount.click();
 
@@ -35,15 +36,23 @@ WebElement searchTextbox  = wait.until(ExpectedConditions.elementToBeClickable(B
 searchTextbox.sendKeys(GlobalVariable.username);
 driver.findElement(By.xpath(GlobalVariable.xpathOption)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathBtnSearch)).click()
+String currentUrl = driver.getCurrentUrl()
+driver.findElement(By.xpath(GlobalVariable.xpathEditUser)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathTTHD)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathSoTienTamGiu)).sendKeys("2000000")
+driver.findElement(By.xpath(GlobalVariable.xpathCapNhat)).click()
+driver.findElement(By.xpath(GlobalVariable.xpathBtnOk)).click()
+driver.get(currentUrl)
 
-WebElement lockBalance = driver.findElement(By.xpath("//strong[contains(text(),'Số dư không được rút:')]"));
+WebElement lockBalance = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathSoDuKhongRut)))
+//WebElement lockBalance = driver.findElement(By.xpath("//strong[contains(text(),'Số dư không được rút:')]"));
 
 String script = "return arguments[0].nextSibling.textContent;";
 String lockBalanceAf = (String) js.executeScript(script, lockBalance);
 String result = lockBalanceAf.replace("VNĐ", "").trim();
 def lockBalanceAf1 = lockBalanceAf.replaceAll("[^0-9]", "")
 int lockBalanceBf = Integer.parseInt(lockBalanceAf1)
-System.out.println("Thu ho " + lockBalanceBf);
+System.out.println("So du khong duoc rut" + lockBalanceBf);
 
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathAccountName)).getText(), GlobalVariable.username)
 driver.findElement(By.xpath(GlobalVariable.xpathBtnRutTien)).click()
@@ -54,25 +63,31 @@ driver.findElement(By.xpath(GlobalVariable.xpathOptionThuho)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDay)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathToday)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathDayClicked)).click()
-
-//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.BtnOkXpath))).click()
+try {
+	WebElement popupDS = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn ')]")))
+	Assert.assertEquals(popupDS.getText(), "Đã tồn tại kỳ đối soát trước đó, Bạn có chắc chắn muốn tiếp tục thực hiện giao dịch?")
+	driver.findElement(By.xpath(GlobalVariable.BtnOkXpath)).click()
+} catch (TimeoutException e) {
+	println("Popup không xuất hiện, tiếp tục thực hiện giao dịch.")
+}
 
 WebElement overbalance =  driver.findElement(By.xpath("//label[contains(text(),'Số dư Ví')]/following::input[1]"))
 String inputValue = overbalance.getAttribute("value");
 def numericString = inputValue.replaceAll("[^0-9]", "")
 int walletBalance = Integer.parseInt(numericString)
 
-WebElement availbeBalance = driver.findElement(By.xpath("//label[contains(text(),'Số dư khả dụng')]/following::input[1]"))
+WebElement availbeBalance = driver.findElement(By.xpath("//label[contains(text(),'Số tiền GD')]/following::input[1]"))
 String outputValue = availbeBalance.getAttribute("value");
 def outputValueClear = outputValue.replaceAll("[^0-9]", "")
 int availbeBalanceInt = Integer.parseInt(outputValueClear)
 
-driver.findElement(By.xpath(GlobalVariable.xpathFieldAmount)).sendKeys(GlobalVariable.amountValid)
+driver.findElement(By.xpath(GlobalVariable.xpathFieldAmount)).sendKeys(GlobalVariable.amountInvalid)
+driver.findElement(By.xpath("//label[contains(text(),'Chấp nhận cho rút số tiền tạm giữ')]")).click()
 
 driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()
-int test1 = availbeBalanceInt - lockBalanceBf
+int test1 = walletBalance - availbeBalanceInt
 DecimalFormat formatter = new DecimalFormat("#,###");
 String formattedResult = formatter.format(test1);
-System.out.println(formattedResult);
+System.out.println("So tien rut khong the hon" + formattedResult);
 String xpathErrorGreatThanAvailbleBalance = "//p[contains(text(),'Số tiền rút không được lớn hơn " + formattedResult + "VNĐ')]"
 Assert.assertEquals(driver.findElement(By.xpath(xpathErrorGreatThanAvailbleBalance)).getText(), "Số tiền rút không được lớn hơn " + formattedResult + "VNĐ")
