@@ -3,10 +3,10 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
-import org.testng.annotations.Test
 
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 def driver = DriverFactory.getWebDriver()
 String amount = 100000;
 String amountMax = 9999999999;
-
+Actions actions = new Actions(driver)
 WebUI.callTestCase(findTestCase('Test Cases/Login/LoginCommon'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.waitForElementVisible(findTestObject('Trang chủ/userName'), 10, FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('Test Cases/Quản lý tài khoản merchant/Quản lý danh sách tài khoản/CustomFunctions.groovy'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -28,7 +28,9 @@ driver.findElement(By.xpath(GlobalVariable.xpathTranfer)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathTextAccount)))
 driver.findElement(By.xpath(GlobalVariable.xpathTaiKhoanNhan)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathSearchTextbox1)).sendKeys(GlobalVariable.username)
-driver.findElement(By.xpath(GlobalVariable.xpathClicked)).click()
+
+WebElement clicked = driver.findElement(By.xpath(GlobalVariable.xpathClicked))
+actions.moveToElement(clicked).click().perform()
 driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathChonViChuyen1)).getText(), "Vui lòng chọn ví chuyển.")
 Assert.assertEquals(driver.findElement(By.xpath(GlobalVariable.xpathNhapSoTienChuyen)).getText(), "Vui lòng nhập số tiền chuyển.")
@@ -52,7 +54,8 @@ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable
 driver.findElement(By.xpath(GlobalVariable.xpathDepositTextbox)).sendKeys(amount)
 driver.findElement(By.xpath(GlobalVariable.xpathTaiKhoanNhan)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathSearchTextbox1)).sendKeys(GlobalVariable.username)
-driver.findElement(By.xpath(GlobalVariable.xpathClicked)).click()
+WebElement click3 =  driver.findElement(By.xpath(GlobalVariable.xpathClicked))
+actions.moveToElement(click3).click().perform()
 driver.findElement(By.xpath(GlobalVariable.xpathChonViChuyen)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathThuHo1)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathConfirm)).click()

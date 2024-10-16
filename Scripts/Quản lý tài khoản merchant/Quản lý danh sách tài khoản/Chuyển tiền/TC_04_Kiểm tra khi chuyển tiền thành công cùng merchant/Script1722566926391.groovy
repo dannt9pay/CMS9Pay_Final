@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.Assert
@@ -29,7 +30,7 @@ System.out.println("chiHoWallet " + nextTextNodeContent);
 def numericString = nextTextNodeContent.replaceAll("[^0-9]", "")
 int chiHoBf = Integer.parseInt(numericString)
 System.out.println("Chi ho " + chiHoBf);
-
+Actions actions = new Actions(driver)
 WebElement thuHoElm = driver.findElement(By.xpath(GlobalVariable.xpathThuHoBtn));
 JavascriptExecutor jsBF = (JavascriptExecutor) driver;
 String scriptBF = "return arguments[0].nextSibling.textContent;";
@@ -41,7 +42,8 @@ driver.findElement(By.xpath(GlobalVariable.xpathTranfer)).click()
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.xpathTextAccount)))
 driver.findElement(By.xpath(GlobalVariable.xpathTaiKhoanNhan)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathSearchTextbox1)).sendKeys(GlobalVariable.username)
-driver.findElement(By.xpath(GlobalVariable.xpathClicked)).click()
+WebElement clicked = driver.findElement(By.xpath(GlobalVariable.xpathClicked))
+actions.moveToElement(clicked).click().perform()
 driver.findElement(By.xpath(GlobalVariable.xpathDepositTextbox)).sendKeys(amount)
 driver.findElement(By.xpath(GlobalVariable.xpathChonViNhan)).click()
 driver.findElement(By.xpath(GlobalVariable.xpathChiHo2)).click()
